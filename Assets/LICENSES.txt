@@ -37,4 +37,20 @@ Free to use for personal & professional projects.  Attribution appreciated.  If 
 --------------------------------------------------------------------------------------------------------------------
 
 Food and weapons by Alex's Assets:
-License: Creative Commons Zero v1.0 Universal
+Licence: Creative Commons Zero v1.0 Universal
+
+--------------------------------------------------------------------------------------------------------------------
+
+Background licence found at: https://craftpix.net/file-licenses/
+
+--------------------------------------------------------------------------------------------------------------------
+
+Coin icon by greatdocbrown
+Licence under CC0 Licence: You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Life bar by Redreeh:
+- You can use these assets in any commercial or non-commercial project.
+- All files are transparent PNG files.
+- Credit is not required, but greatly appreciated!
