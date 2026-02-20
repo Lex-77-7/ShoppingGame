@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class ItemSlot : MonoBehaviour
+[System.Serializable]
+public class ItemSlot
 {
     public ItemBase Item;
     public int Quantity;
@@ -11,7 +12,7 @@ public class ItemSlot : MonoBehaviour
         Quantity = 1;
     }
 
-    internal bool HasItem(ItemBase item)
+    public bool HasItem(ItemBase item)
     {
         return (Item == item);
     }

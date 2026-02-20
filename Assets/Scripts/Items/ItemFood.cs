@@ -5,7 +5,7 @@ public class ItemFood : Consummable
 {
     public int Energy;
 
-    public override void ConsumeItem()
+    public override void ConsumeItem(IConsume consumer)
     {
         // Use item
     }

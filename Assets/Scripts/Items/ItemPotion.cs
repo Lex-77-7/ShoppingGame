@@ -5,7 +5,7 @@ public class ItemPotion : Consummable
 {
     public int Health;
 
-    public override void ConsumeItem()
+    public override void ConsumeItem(IConsume consumer)
     {
         // Use item
     }
