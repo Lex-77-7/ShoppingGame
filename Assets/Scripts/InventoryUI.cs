@@ -7,8 +7,9 @@ public class InventoryUI : MonoBehaviour
     public ItemSlotUI SlotPrefab;
 
     private List<GameObject> itemSlots;
+    private ItemSlotUI selectedSlot;
 
-    void Start()
+    private void Start()
     {
         FillInventoryUI(Inventory);
     }
@@ -22,6 +23,8 @@ public class InventoryUI : MonoBehaviour
     {
         Inventory.OnInventoryChange -= UpdateInventoryUI;
     }
+
+
 
     private void UpdateInventoryUI()
     {
@@ -44,7 +47,7 @@ public class InventoryUI : MonoBehaviour
 
     private void FillInventoryUI(Inventory inventory)
     {
-        if (itemSlots == null) itemSlots = new List<GameObject>();
+        itemSlots ??= new List<GameObject>();
 
         if (itemSlots.Count > 0)
         {
@@ -59,11 +62,17 @@ public class InventoryUI : MonoBehaviour
 
     private GameObject AddSlot(ItemSlot itemSlot)
     {
-        var element = Instantiate(SlotPrefab, Vector3.zero, Quaternion.identity, transform);
+        ItemSlotUI element = Instantiate(SlotPrefab, Vector3.zero, Quaternion.identity, transform);
 
         element.Initialize(itemSlot, this);
 
         return element.gameObject;
+    }
+
+    public void SetSelectedSlot(ItemSlotUI selectedSlot)
+    {
+        this.selectedSlot = selectedSlot;
+        Debug.Log("Selected Slot: " + selectedSlot.name);
     }
 
     public void UseItem(ItemBase item)

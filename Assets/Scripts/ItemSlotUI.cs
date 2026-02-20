@@ -1,9 +1,10 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public Image Image;
     public TextMeshProUGUI QuantityText;
@@ -18,15 +19,23 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         Image.sprite = slot.Item.Image;
 
         QuantityText.text = slot.Quantity.ToString();
-        QuantityText.enabled = (slot.Quantity > 1);
+        QuantityText.enabled = slot.Quantity > 1;
 
         item = slot.Item;
         this.inventory = inventory;
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        inventory.SetSelectedSlot(this);
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (!canvas) canvas = GetComponentInParent<Canvas>();
+        if (!canvas)
+        {
+            canvas = GetComponentInParent<Canvas>();
+        }
 
         parentTransform = transform.parent;
 
@@ -42,13 +51,14 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        RaycastHit2D hitData = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition));
+        Ray ray = Camera.main.ScreenPointToRay(Pointer.current.position.ReadValue());
+        RaycastHit2D hitData = Physics2D.GetRayIntersection(ray);
 
         if (hitData)
         {
             Debug.Log("Drop over object: " + hitData.collider.gameObject.name);
 
-            var consumer = hitData.collider.gameObject.GetComponent<IConsume>();
+            IConsume consumer = hitData.collider.gameObject.GetComponent<IConsume>();
 
             if ((consumer != null) && (item is Consummable))
             {
