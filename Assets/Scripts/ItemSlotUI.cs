@@ -70,4 +70,9 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         transform.SetParent(parentTransform.transform);
         transform.localPosition = Vector3.zero;
     }
+
+    public ItemBase GetItem()
+    {
+        return item;
+    }
 }

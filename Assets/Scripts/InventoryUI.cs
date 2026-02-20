@@ -74,6 +74,10 @@ public class InventoryUI : MonoBehaviour
         this.selectedSlot = selectedSlot;
         Debug.Log("Selected Slot: " + selectedSlot.name);
     }
+    public ItemSlotUI GetSelectedSlot()
+    {
+        return selectedSlot;
+    }
 
     public void UseItem(ItemBase item)
     {
