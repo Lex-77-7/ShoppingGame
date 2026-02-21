@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item", menuName = "Inventory/Items/Generic")]
@@ -8,4 +7,6 @@ public class ItemBase : ScriptableObject
     public string Description;
     public Sprite Image;
     public bool IsStackable;
+    public int BuyPrice;
+    public int SellPrice;
 }

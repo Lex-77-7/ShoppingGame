@@ -1,56 +1,68 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ShopTransactionHandler : MonoBehaviour
 {
-    public enum TransactionType { Buy, Sell }
+    public enum TransactionResult { Success, InsufficientFunds, InvalidItem }
 
-    [Header("Settings")]
-    public TransactionType type;
+    [Header("Inventories")]
+    public Inventory PlayerInventory;
+    public Inventory ShopInventory;
 
-    [Header("References")]
-    public InventoryUI playerInventory;
-    public InventoryUI shopInventory;
+    [Header("UI References")]
+    public InventoryUI PlayerInventoryUI;
+    public InventoryUI ShopInventoryUI;
 
-    public void Execute()
+    [Header("Economy")]
+    public Wallet PlayerWallet;
+
+    [Header("UI Feedback events")]
+    public Action<TransactionResult> OnTransactionComplete;
+
+    private void OnEnable()
     {
-        if (type == TransactionType.Sell)
-        {
-            HandleTransfer(playerInventory, shopInventory);
-        }
-        else
-        {
-            HandleTransfer(shopInventory, playerInventory);
-        }
+        Debug.Assert(PlayerInventoryUI != null, "PlayerInventoryUI is null on ShopTransactionHandler");
+        Debug.Assert(ShopInventoryUI != null, "ShopInventoryUI is null on ShopTransactionHandler");
+
+
+        PlayerInventoryUI.OnSelectedSlotAction += HandleSell;
+        ShopInventoryUI.OnSelectedSlotAction += HandleBuy;
+    }
+    private void OnDisable()
+    {
+        PlayerInventoryUI.OnSelectedSlotAction -= HandleSell;
+        ShopInventoryUI.OnSelectedSlotAction -= HandleBuy;
     }
 
-    private void HandleTransfer(InventoryUI source, InventoryUI target)
+    private void HandleBuy(ItemBase item)
     {
-        if (source.GetSelectedSlot() is ItemSlotUI selectedSlot)
+        if (item == null)
         {
-            ItemBase item = selectedSlot.GetItem();
-
-            if (type == TransactionType.Buy)
-            {
-                // if (Gold < item.Value) return;
-                // Gold -= item.Value;
-                target.Inventory.AddItem(item);
-                source.Inventory.RemoveItem(item);
-                Debug.Log($"Bought {item.Name}");
-            }
-            else
-            {
-                // Gold += item.Value;
-                source.Inventory.AddItem(item);
-                target.Inventory.RemoveItem(item);
-                Debug.Log($"Sold {item.Name}");
-            }
-
-            // Clean up
-            source.SetSelectedSlot(null);
+            OnTransactionComplete?.Invoke(TransactionResult.InvalidItem);
+            return;
         }
-        else
+        if (!PlayerWallet.CanAfford(item.BuyPrice))
         {
-            Debug.Log($"Select an item in {(type == TransactionType.Sell ? "Player" : "Shop")} inventory first!");
+            OnTransactionComplete?.Invoke(TransactionResult.InsufficientFunds);
+            return;
         }
+
+        PlayerWallet.Spend(item.BuyPrice);
+        ShopInventory.RemoveItem(item);
+        PlayerInventory.AddItem(item);
+        OnTransactionComplete?.Invoke(TransactionResult.Success);
+    }
+    private void HandleSell(ItemBase item)
+    {
+        if (item == null)
+        {
+            OnTransactionComplete?.Invoke(TransactionResult.InvalidItem);
+            return;
+        }
+
+        PlayerWallet.Earn(item.SellPrice);
+        PlayerInventory.RemoveItem(item);
+        ShopInventory.AddItem(item);
+        OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
 }

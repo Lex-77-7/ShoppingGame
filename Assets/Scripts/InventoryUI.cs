@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class InventoryUI : MonoBehaviour
 
     private List<GameObject> itemSlots;
     private ItemSlotUI selectedSlot;
+    public event Action<ItemBase> OnSelectedSlotAction; //Buy, sell, give... when it changes inventories
 
     private void Start()
     {
@@ -72,11 +74,19 @@ public class InventoryUI : MonoBehaviour
     public void SetSelectedSlot(ItemSlotUI selectedSlot)
     {
         this.selectedSlot = selectedSlot;
-        Debug.Log("Selected Slot: " + selectedSlot.name);
+        Debug.Log("Selected Slot: " + selectedSlot.GetItem().Name);
     }
     public ItemSlotUI GetSelectedSlot()
     {
         return selectedSlot;
+    }
+
+    public void SubmitSelectedSlot()
+    {
+        if (selectedSlot == null) return;
+
+        OnSelectedSlotAction?.Invoke(selectedSlot.GetItem());
+        selectedSlot = null;
     }
 
     public void UseItem(ItemBase item)
