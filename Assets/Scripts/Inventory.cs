@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewInventory", menuName= "Inventory/Inventory")]
+[CreateAssetMenu(fileName = "NewInventory", menuName = "Inventory/Inventory")]
 public class Inventory : ScriptableObject
 {
     [SerializeField]
@@ -44,6 +44,7 @@ public class Inventory : ScriptableObject
                 RemoveSlot(slot);
             }
         }
+        OnInventoryChange?.Invoke();
     }
 
     private void RemoveSlot(ItemSlot slot)

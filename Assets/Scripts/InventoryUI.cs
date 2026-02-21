@@ -71,10 +71,14 @@ public class InventoryUI : MonoBehaviour
         return element.gameObject;
     }
 
-    public void SetSelectedSlot(ItemSlotUI selectedSlot)
+    public void SetSelectedSlot(ItemSlotUI slot)
     {
-        this.selectedSlot = selectedSlot;
-        Debug.Log("Selected Slot: " + selectedSlot.GetItem().Name);
+        if (selectedSlot != null)
+            selectedSlot.SetSelected(false);
+
+        selectedSlot = slot;
+        selectedSlot.SetSelected(true);
+        Debug.Log("Selected Slot: " + slot.GetItem().Name);
     }
     public ItemSlotUI GetSelectedSlot()
     {
@@ -85,6 +89,7 @@ public class InventoryUI : MonoBehaviour
     {
         if (selectedSlot == null) return;
 
+        selectedSlot.SetSelected(false);
         OnSelectedSlotAction?.Invoke(selectedSlot.GetItem());
         selectedSlot = null;
     }

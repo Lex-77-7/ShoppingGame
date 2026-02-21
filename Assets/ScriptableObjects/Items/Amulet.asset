@@ -16,3 +16,5 @@ MonoBehaviour:
   Description: This is an amulet
   Image: {fileID: 21300000, guid: 4bce974e019484741a08787fbce87f73, type: 3}
   IsStackable: 0
+  BuyPrice: 50
+  SellPrice: 50

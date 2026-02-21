@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public Image Image;
+    public Image SelectedOverlay;
     public TextMeshProUGUI QuantityText;
 
     private Canvas canvas;
@@ -74,5 +75,10 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public ItemBase GetItem()
     {
         return item;
+    }
+
+    public void SetSelected(bool selected)
+    {
+        SelectedOverlay.enabled = selected;
     }
 }

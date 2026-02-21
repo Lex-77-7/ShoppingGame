@@ -21,10 +21,6 @@ public class ShopTransactionHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Assert(PlayerInventoryUI != null, "PlayerInventoryUI is null on ShopTransactionHandler");
-        Debug.Assert(ShopInventoryUI != null, "ShopInventoryUI is null on ShopTransactionHandler");
-
-
         PlayerInventoryUI.OnSelectedSlotAction += HandleSell;
         ShopInventoryUI.OnSelectedSlotAction += HandleBuy;
     }
