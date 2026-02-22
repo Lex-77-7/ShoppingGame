@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: Assembly-CSharp::ItemBase
   Name: Bow
-  Description: A owerful bow to fight enemies
+  Description: A powerful bow to fight enemies
   Image: {fileID: 21300000, guid: dc3070d36fc3c8f4aaba3c3376115102, type: 3}
   IsStackable: 0
   BuyPrice: 300

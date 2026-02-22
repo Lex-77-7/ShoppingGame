@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,6 +16,8 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private ItemBase item;
     private InventoryUI inventory;
 
+    public static event Action <ItemBase> OnItemClicked;
+
     public void Initialize(ItemSlot slot, InventoryUI inventory)
     {
         Image.sprite = slot.Item.Image;
@@ -29,6 +32,7 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public void OnPointerClick(PointerEventData eventData)
     {
         inventory.SetSelectedSlot(this);
+        OnItemClicked?.Invoke(item);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
