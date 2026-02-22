@@ -1,3 +1,16 @@
 Key;English;Catalan;Spanish
 TITLE_MENU_START;Start;Començar;Empezar
 TITLE_MENU_MUSIC;Music;Musica;Música
+GAMEPLAY_DAMAGE;Take Damage;Rebre mal;Recibir daño
+GAMEPLAY_BUY;Buy;Comprar;Comprar
+GAMEPLAY_SELL;Sell;Vendre;Vender
+ENDING_MENU_REPLAY;Replay;Repeteix;Repetir
+ENDING_MENU_QUIT;Quit;Sortir;Salir
+SHOP_POTION:Potion;Poció;Poción
+SHOP_APPLE;Apple;Poma;Manzana
+SHOP_AMULET;Amulet;Amulet;Amuleto
+DESCRIPTION_APPLE;Keeps the doctor away for a day;Manté el metge lluny durant un dia;Mantiene al doctor lejos por un día
+DESCRIPTION_POTION;Grants fire resistance;Atorga resistència al foc;Otorga resistencia al fuego;
+DESCRIPTION_AMULET;Makes you stronger;Et fa més fort;Te hace más fuerte
+ENDING_MENU_REPLAY;Replay;Repeteix;Repetir
+ENDING_MENU_QUIT;Quit;Sortir;Salir

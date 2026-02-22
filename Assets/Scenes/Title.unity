@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Localizer
   DataSheet: {fileID: 4900000, guid: ddc820cc1b3ab3e4f980f48380f52922, type: 3}
-  DefaultLanguage: 0
+  DefaultLanguage: 1
 --- !u!4 &1017323452
 Transform:
   m_ObjectHideFlags: 0
