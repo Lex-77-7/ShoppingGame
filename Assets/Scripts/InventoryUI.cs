@@ -26,8 +26,6 @@ public class InventoryUI : MonoBehaviour
         Inventory.OnInventoryChange -= UpdateInventoryUI;
     }
 
-
-
     private void UpdateInventoryUI()
     {
         ClearInventoryUI();
@@ -80,6 +78,7 @@ public class InventoryUI : MonoBehaviour
         selectedSlot.SetSelected(true);
         Debug.Log("Selected Slot: " + slot.GetItem().Name);
     }
+
     public ItemSlotUI GetSelectedSlot()
     {
         return selectedSlot;
