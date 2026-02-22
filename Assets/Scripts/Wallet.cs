@@ -10,12 +10,6 @@ public class Wallet : MonoBehaviour
 
     public bool CanAfford(int amount) => gold >= amount;
 
-    private void Start()
-    {
-        // Set starting money in wallet UI
-        OnWalletChange.Invoke();
-    }
-
     public void Spend(int amount)
     {
         if (!CanAfford(amount))

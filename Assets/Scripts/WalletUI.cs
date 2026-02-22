@@ -3,14 +3,19 @@ using UnityEngine;
 
 public class WalletUI : MonoBehaviour
 {
-    [SerializeField] Wallet wallet;
-    [SerializeField] TextMeshProUGUI goldText;
+    [SerializeField] private Wallet wallet;
+    [SerializeField] private TextMeshProUGUI goldText;
 
+    private void Start()
+    {
+        goldText.text = wallet.Gold.ToString();
+    }
 
     private void OnEnable()
     {
         wallet.OnWalletChange += UpdateUI;
     }
+
     private void OnDisable()
     {
         wallet.OnWalletChange -= UpdateUI;
@@ -20,5 +25,4 @@ public class WalletUI : MonoBehaviour
     {
         goldText.text = wallet.Gold.ToString();
     }
-
 }
