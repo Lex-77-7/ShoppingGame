@@ -41,7 +41,7 @@ Licence: Creative Commons Zero v1.0 Universal
 
 --------------------------------------------------------------------------------------------------------------------
 
-Background licence found at: https://craftpix.net/file-licenses/
+Background image licence found at: https://craftpix.net/file-licenses/
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -54,3 +54,7 @@ Life bar by Redreeh:
 - You can use these assets in any commercial or non-commercial project.
 - All files are transparent PNG files.
 - Credit is not required, but greatly appreciated!
+
+--------------------------------------------------------------------------------------------------------------------
+
+Sound effects licence: https://pixabay.com/es/service/license-summary/

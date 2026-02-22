@@ -1,11 +1,14 @@
-using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TakeDamageButton : MonoBehaviour
 {
     public List<Sprite> HealthSprites;
     private int currentIndex = 0;
+
+    public static event Action OnTakeDamage;
 
     public void Awake()
     {
@@ -20,12 +23,15 @@ public class TakeDamageButton : MonoBehaviour
     public void OnClickTakeDamage()
     {
         currentIndex++;
+        OnTakeDamage?.Invoke();
 
-        if (currentIndex >= HealthSprites.Count)
+        if (currentIndex >= HealthSprites.Count - 1)
         {
-            currentIndex = HealthSprites.Count - 1;
+            SceneManager.LoadScene("Ending");
         }
-
-        gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[currentIndex];
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[currentIndex];
+        }
     }
 }
