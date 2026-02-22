@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 public class LanguageButton : MonoBehaviour, IPointerClickHandler
 {
     public Language Language;
-
     private Text localizedText;
 
     public void Start()

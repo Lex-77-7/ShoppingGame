@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Localizer : MonoBehaviour
 {
-    public static Localizer Instance; 
-
+    public static Localizer Instance;
     public TextAsset DataSheet; 
 
     private Language currentLanguage;
