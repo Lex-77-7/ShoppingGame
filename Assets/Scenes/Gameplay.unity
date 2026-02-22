@@ -2123,7 +2123,7 @@ GameObject:
   - component: {fileID: 937700165}
   - component: {fileID: 937700164}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2230,7 +2230,7 @@ GameObject:
   - component: {fileID: 942837957}
   - component: {fileID: 942837956}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2275,7 +2275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6288984081829590708, guid: 5d4b709e40f169b48bb2ce318291db3c,
+  m_Sprite: {fileID: -1955448553306655712, guid: 5d4b709e40f169b48bb2ce318291db3c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2823,7 +2823,7 @@ GameObject:
   - component: {fileID: 1732141695}
   - component: {fileID: 1732141697}
   m_Layer: 0
-  m_Name: GoldCoin01
+  m_Name: GoldCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3391,7 +3391,7 @@ SceneRoots:
   - {fileID: 1732141696}
   - {fileID: 492506483}
   - {fileID: 1893906002}
-  - {fileID: 994248853}
   - {fileID: 1038279405}
   - {fileID: 367612513}
   - {fileID: 657939387}
+  - {fileID: 994248853}
