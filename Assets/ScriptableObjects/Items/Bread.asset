@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Bread
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  Name: 
+  Name: Bread
   Description: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 2a5825c7357c2b540b95c6ef0ebe3a47, type: 3}
   IsStackable: 0
-  BuyPrice: 0
-  SellPrice: 0
-  Energy: 0
+  BuyPrice: 10
+  SellPrice: 10
+  Energy: 50

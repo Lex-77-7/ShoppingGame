@@ -422,7 +422,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 168.96, y: 162.25}
+  m_CellSize: {x: 134.2, y: 148}
   m_Spacing: {x: 17.8, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -1026,6 +1026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336589599}
   - component: {fileID: 336589598}
+  - component: {fileID: 336589600}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1061,6 +1062,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336589600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336589597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e885fc2cb04f74889813ae65104556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &367612509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,8 +1234,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5c031a23d24fa3a4c9c0519cde358910, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2234,7 +2247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09cd29b0aec1cc147976e1fd57113a23, type: 2}
   m_sharedMaterial: {fileID: -3019402296467482077, guid: 09cd29b0aec1cc147976e1fd57113a23,
@@ -2937,7 +2950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Keeps the doctor away for a day
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09cd29b0aec1cc147976e1fd57113a23, type: 2}
   m_sharedMaterial: {fileID: -3019402296467482077, guid: 09cd29b0aec1cc147976e1fd57113a23,
@@ -3376,6 +3389,7 @@ GameObject:
   - component: {fileID: 1809346933}
   - component: {fileID: 1809346932}
   - component: {fileID: 1809346935}
+  - component: {fileID: 1809346936}
   m_Layer: 5
   m_Name: DamageButton
   m_TagString: Untagged
@@ -3447,9 +3461,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 492506484}
+      - m_Target: {fileID: 1809346936}
         m_TargetAssemblyTypeName: TakeDamageButton, Assembly-CSharp
-        m_MethodName: OnClickTakeDamage
+        m_MethodName: OnPressTakeDamage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3519,6 +3533,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1809346936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809346930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b8c8e9e83919942a37208c65a028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1809804867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3776,8 +3802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 448.2, y: 367.7}
-  m_SizeDelta: {x: 415.6, y: 74.78}
+  m_AnchoredPosition: {x: 482.4, y: 367.7}
+  m_SizeDelta: {x: 486.33, y: 74.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094082974
 MonoBehaviour:
@@ -3799,7 +3825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fire potion
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09cd29b0aec1cc147976e1fd57113a23, type: 2}
   m_sharedMaterial: {fileID: -3019402296467482077, guid: 09cd29b0aec1cc147976e1fd57113a23,

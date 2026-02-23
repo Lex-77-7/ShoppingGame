@@ -24,6 +24,7 @@ public class ShopTransactionHandler : MonoBehaviour
         PlayerInventoryUI.OnSelectedSlotAction += HandleSell;
         ShopInventoryUI.OnSelectedSlotAction += HandleBuy;
     }
+
     private void OnDisable()
     {
         PlayerInventoryUI.OnSelectedSlotAction -= HandleSell;
@@ -48,6 +49,7 @@ public class ShopTransactionHandler : MonoBehaviour
         PlayerInventory.AddItem(item);
         OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
+
     private void HandleSell(ItemBase item)
     {
         if (item == null)

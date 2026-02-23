@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089bda90d6dc2d640ba5140dce92d876, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: Assembly-CSharp::ItemBase
-  Name: 
+  Name: Axe
   Description: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 4cecc98531a62a4478a75cddc91f08e5, type: 3}
   IsStackable: 0
-  BuyPrice: 0
-  SellPrice: 0
+  BuyPrice: 150
+  SellPrice: 150

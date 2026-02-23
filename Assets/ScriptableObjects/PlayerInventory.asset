@@ -13,17 +13,31 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   ItemSlots:
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
+  - Item: {fileID: 11400000, guid: 9c6fd6c048b9a8d4594e4850e871ecee, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 89f0f8af3bfbd304db50edd2d5debdfa, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 9fccb385d0b391349b46823009f29be5, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 21882efde8071d6468fc8aa65910310c, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 65b28b0a413ecfb41ab9c3cbc8a934ea, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: f7740f32adf18214f8f52c1aeedd7b1f, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 3c7a01c3c3f4eeb46a4564d2e7b6ec30, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: cacae8910fc676449b9f83df5d1f90e3, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 23a257a14905b30438736dfa8b876bac, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 27836723c86473f4ead4ad310ebe0014, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 2579711598970c24baaf2be46a408f0f, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: baba3926180dab345800db48a0d0a627, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 80dd8681fb9029d4bba616dfc7cd04fe, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 103f638a87c60fa4896876567caa5357, type: 2}
+    Quantity: 1

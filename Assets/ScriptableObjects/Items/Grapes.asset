@@ -18,4 +18,4 @@ MonoBehaviour:
   IsStackable: 0
   BuyPrice: 55
   SellPrice: 55
-  Energy: 40
+  Energy: 50

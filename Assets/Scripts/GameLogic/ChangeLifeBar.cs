@@ -1,14 +1,10 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class TakeDamageButton : MonoBehaviour
+public class ChangeLifeBar : MonoBehaviour
 {
     public List<Sprite> HealthSprites;
     private int currentIndex = 0;
-
-    public static event Action OnTakeDamage;
 
     public void Awake()
     {
@@ -20,16 +16,21 @@ public class TakeDamageButton : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[0];
     }
 
-    public void OnClickTakeDamage()
+    private void OnEnable()
+    {
+        TakeDamageButton.OnTakeDamage += LoseLife;
+    }
+    
+    private void OnDisable()
+    {
+        TakeDamageButton.OnTakeDamage -= LoseLife;
+    }
+
+    public void LoseLife()
     {
         currentIndex++;
-        OnTakeDamage?.Invoke();
 
-        if (currentIndex >= HealthSprites.Count - 1)
-        {
-            SceneManager.LoadScene("Ending");
-        }
-        else
+        if (currentIndex < HealthSprites.Count)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[currentIndex];
         }

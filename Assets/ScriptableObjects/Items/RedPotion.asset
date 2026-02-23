@@ -18,4 +18,4 @@ MonoBehaviour:
   IsStackable: 1
   BuyPrice: 30
   SellPrice: 30
-  Health: 15
+  Health: 25
