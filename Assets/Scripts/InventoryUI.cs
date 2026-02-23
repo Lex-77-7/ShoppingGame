@@ -76,7 +76,7 @@ public class InventoryUI : MonoBehaviour
 
         selectedSlot = slot;
         selectedSlot.SetSelected(true);
-        Debug.Log("Selected Slot: " + slot.GetItem().Name);
+        Debug.Log("Selected Slot: " + slot.GetItem().NameKey);
     }
 
     public ItemSlotUI GetSelectedSlot()

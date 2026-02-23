@@ -5,11 +5,53 @@ GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
 GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Item
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
-SHOP_POTION:Potion;Poció;Poción
-SHOP_APPLE;Apple;Poma;Manzana
-SHOP_AMULET;Amulet;Amulet;Amuleto
-DESCRIPTION_APPLE;Keeps the doctor away for a day;Manté el metge lluny durant un dia;Mantiene al doctor lejos por un día
-DESCRIPTION_POTION;Grants fire resistance;Atorga resistència al foc;Otorga resistencia al fuego;
-DESCRIPTION_AMULET;Makes you stronger;Et fa més fort;Te hace más fuerte
 ENDING_MENU_REPLAY;Replay;Repeteix;Repetir
 ENDING_MENU_QUIT;Quit;Sortir;Salir
+SHOP_APPLE;Apple;Poma;Manzana
+SHOP_AXE;Axe;Destral;Hacha
+SHOP_BANANA;Banana;Banana;Banana
+SHOP_BAT;Bat;Ratpenat;Murciélago
+SHOP_BLUE_POTION;Blue potion;Poció blava;Poción azul
+SHOP_BOW;Bow;Arc;Arco
+SHOP_BREAD;Bread;Pa;Pan
+SHOP_CHEESE;Cheese;Formatge;Queso
+SHOP_CHICKEN;Chicken;Gallina;Gallina
+SHOP_CROWN;Crown;Corona;Corona
+SHOP_DAGGER;Dagger;Daga;Daga
+SHOP_GRAPES;Grapes;Ra�m;Uvas
+SHOP_GREEN_POTION;Green potion;Poció verda;Poción verde
+SHOP_HAMMER;Hammer;Martell;Martillo
+SHOP_ORANGE_POTION;Orange potion;Poció taronja;Poción naranja
+SHOP_PINK_POTION;Love potion;Poció amorosa;Poción de amor
+SHOP_PIZZA;Pizza;Pizza;Pizza
+SHOP_PURPLE_POTION;Purple potion;Poció morada;Poción morada
+SHOP_RED_POTION;Hate potion;Poció d'odi;Poción de odio
+SHOP_SHIELD;Shield;Escudo;Escudo
+SHOP_SWORD;Sword;Espasa;Espada
+SHOP_TRIDENT;Trident;Trident;Tridente
+SHOP_WAND;Wand;Encalla;Varita
+SHOP_WITCH_HAT;Witch hat;Barret de bruixa;Sombrero de bruja
+DESCRIPTION_APPLE;Keeps the doctor away for a day;Manté el metge lluny durant un dia;Mantiene al doctor lejos por un día
+DESCRIPTION_AXE;Chops down trees and heads;Talla els arbres i els caps;Corta árboles y cabezas
+DESCRIPTION_BANANA;Minions love them;Els Minions els estimen;Los Minions las aman
+DESCRIPTION_BAT;Has a rival called Superman;Té un rival anomenat Superman;Tiene un rival llamado Superman
+DESCRIPTION_BLUE_POTION;Grants water breathing;Aconsegueix la respiració de l'aigua;Permite respirar bajo el agua
+DESCRIPTION_BOW;A powerful bow to fight enemies;Un arc poderós per lluitar contra els enemics;Un arco poderoso para luchar contra enemigos
+DESCRIPTION_BREAD;Will help you if you're scared;T'ajudará si tens por;Para el susto
+DESCRIPTION_CHEESE;Old cheese with a suspicious smell;Formatge vell amb olor sospitosa;Queso viejo con olor sospechoso
+DESCRIPTION_CHICKEN;Cannot fly;No es pot volar;No puede volar
+DESCRIPTION_CROWN;Protects you from enemies;Protegeix-te dels enemics;Te protege de los enemigos
+DESCRIPTION_DAGGER;For backstabbing;Per al backstabbing;Para clavarlo en la espalda
+DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la nit de cap d'any;Riesgo de ahogamiento en a�o nuevo
+DESCRIPTION_GREEN_POTION;Cures you with natural herbs;Salpebra amb herbes naturals;Te cura con hierbas naturales
+DESCRIPTION_HAMMER;A useful tool and weapon;Una eina útil i una arma;Una herramienta y arma útil
+DESCRIPTION_ORANGE_POTION;Grants fire resistance;Atorga resistència al foc;Otorga resistencia al fuego
+DESCRIPTION_PINK_POTION;Cupid's favourite potion;La poció preferida de Cupid;La poción favorita de Cupido
+DESCRIPTION_PIZZA;Does not go with pineapple;No va amb pinya;No va con piña
+DESCRIPTION_PURPLE_POTION;Drink Agatha Harkness;Beure Agatha Harkness;Bebe Agatha Harkness
+DESCRIPTION_RED_POTION;Will cause more problems than UNO;Provocará més problemes que UNO;Causará más problemas que UNO
+DESCRIPTION_SHIELD;Protects you from enemies;Et protegeix dels enemics;Te protege de los enemigos
+DESCRIPTION_SWORD;A classic weapon;Una arma clássica;La vieja confiable
+DESCRIPTION_TRIDENT;A flashy weapon;Una arma de classe;Una arma de clase
+DESCRIPTION_WAND;Bibbidi Bobbidi Boo;Bibbidi Bobbidi Boo;Bibbidi Bobbidi Boo
+DESCRIPTION_WITCH_HAT;Makes you look very cool;Fa que es vegi molt fresc;Te hace ver genial

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089bda90d6dc2d640ba5140dce92d876, type: 3}
   m_Name: Crown
   m_EditorClassIdentifier: Assembly-CSharp::ItemBase
-  Name: Crown
-  Description: Protects you from enemies
+  NameKey: 
+  DescriptionKey: 
   Image: {fileID: 21300000, guid: 5f19287215c8efe4391b7c64b0d6023b, type: 3}
   IsStackable: 0
   BuyPrice: 500

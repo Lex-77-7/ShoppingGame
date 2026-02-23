@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  Name: Apple
-  Description: Keeps the doctor away for a day
+  NameKey: SHOP_APPLE
+  DescriptionKey: DESCRIPTION_APPLE
   Image: {fileID: 21300000, guid: 5c031a23d24fa3a4c9c0519cde358910, type: 3}
   IsStackable: 1
   BuyPrice: 100

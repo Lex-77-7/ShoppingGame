@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424f4f40ea5e2fe4aa60e43d06213015, type: 3}
   m_Name: RedPotion
   m_EditorClassIdentifier: Assembly-CSharp::ItemPotion
-  Name: Hate Potion
-  Description: 
+  NameKey: 
+  DescriptionKey: 
   Image: {fileID: 21300000, guid: a6d90b89cffc77e488ba1fbc4c5b3784, type: 3}
   IsStackable: 1
   BuyPrice: 30

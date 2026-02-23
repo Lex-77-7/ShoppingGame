@@ -21,9 +21,9 @@ public class StoreUI : MonoBehaviour
 
     private void SetShowCaseItem(ItemBase item)
     {
-        title.text = item.Name;
+        title.text = item.NameKey;
         image.sprite = item.Image;
-        description.text = item.Description;
+        description.text = item.DescriptionKey;
         cost.text = "Cost: " + item.BuyPrice; // TODO: find which inventory is it to put buy price OR sell price
     }
 }
