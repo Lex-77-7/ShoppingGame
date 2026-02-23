@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089bda90d6dc2d640ba5140dce92d876, type: 3}
+  m_Name: WitchHat
+  m_EditorClassIdentifier: Assembly-CSharp::ItemBase
+  Name: Witch Hat
+  Description: 
+  Image: {fileID: 21300000, guid: f6dc60e4f61c6cf48be1f84b384de047, type: 3}
+  IsStackable: 0
+  BuyPrice: 300
+  SellPrice: 300
