@@ -1,7 +1,8 @@
 Key;English;Catalan;Spanish
 TITLE_MENU_START;Start;Començar;Empezar
 TITLE_MENU_MUSIC;Music;Musica;Música
-GAMEPLAY_DAMAGE;Take Damage;Rebre mal;Recibir daño
+GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
+GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Item
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
 SHOP_POTION:Potion;Poció;Poción
