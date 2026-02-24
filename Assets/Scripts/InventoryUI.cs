@@ -22,11 +22,13 @@ public class InventoryUI : MonoBehaviour
     private void OnEnable()
     {
         Inventory.OnInventoryChange += UpdateInventoryUI;
+        Localizer.OnLanguageChange += UpdateInventoryUI;
     }
 
     private void OnDisable()
     {
         Inventory.OnInventoryChange -= UpdateInventoryUI;
+        Localizer.OnLanguageChange -= UpdateInventoryUI;
     }
 
     private void UpdateInventoryUI()

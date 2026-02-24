@@ -10,12 +10,12 @@ ENDING_MENU_QUIT;Quit;Sortir;Salir
 SHOP_APPLE;Apple;Poma;Manzana
 SHOP_AXE;Axe;Destral;Hacha
 SHOP_BANANA;Banana;Banana;Banana
-SHOP_BAT;Bat;Ratpenat;Murciélago
+SHOP_BAT;Bat;Bat;Bate
 SHOP_BLUE_POTION;Blue potion;Poció blava;Poción azul
 SHOP_BOW;Bow;Arc;Arco
 SHOP_BREAD;Bread;Pa;Pan
 SHOP_CHEESE;Cheese;Formatge;Queso
-SHOP_CHICKEN;Chicken;Gallina;Gallina
+SHOP_CHICKEN;Chicken;Pollo;Pollastre
 SHOP_CROWN;Crown;Corona;Corona
 SHOP_DAGGER;Dagger;Daga;Daga
 SHOP_GRAPES;Grapes;Ra�m;Uvas
@@ -29,17 +29,17 @@ SHOP_RED_POTION;Hate potion;Poció d'odi;Poción de odio
 SHOP_SHIELD;Shield;Escudo;Escudo
 SHOP_SWORD;Sword;Espasa;Espada
 SHOP_TRIDENT;Trident;Trident;Tridente
-SHOP_WAND;Wand;Encalla;Varita
+SHOP_WAND;Wand;Vareta;Varita
 SHOP_WITCH_HAT;Witch hat;Barret de bruixa;Sombrero de bruja
 DESCRIPTION_APPLE;Keeps the doctor away for a day;Manté el metge lluny durant un dia;Mantiene al doctor lejos por un día
 DESCRIPTION_AXE;Chops down trees and heads;Talla els arbres i els caps;Corta árboles y cabezas
 DESCRIPTION_BANANA;Minions love them;Els Minions els estimen;Los Minions las aman
-DESCRIPTION_BAT;Has a rival called Superman;Té un rival anomenat Superman;Tiene un rival llamado Superman
+DESCRIPTION_BAT;Home run;Home run;Home run
 DESCRIPTION_BLUE_POTION;Grants water breathing;Aconsegueix la respiració de l'aigua;Permite respirar bajo el agua
 DESCRIPTION_BOW;A powerful bow to fight enemies;Un arc poderós per lluitar contra els enemics;Un arco poderoso para luchar contra enemigos
 DESCRIPTION_BREAD;Will help you if you're scared;T'ajudará si tens por;Para el susto
 DESCRIPTION_CHEESE;Old cheese with a suspicious smell;Formatge vell amb olor sospitosa;Queso viejo con olor sospechoso
-DESCRIPTION_CHICKEN;Cannot fly;No es pot volar;No puede volar
+DESCRIPTION_CHICKEN;Steve sells them with lava;Steve els embeni amb lava;Steve los vende con lava
 DESCRIPTION_CROWN;Protects you from enemies;Protegeix-te dels enemics;Te protege de los enemigos
 DESCRIPTION_DAGGER;For backstabbing;Per al backstabbing;Para clavarlo en la espalda
 DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la nit de cap d'any;Riesgo de ahogamiento en a�o nuevo
