@@ -10,7 +10,6 @@ public class ItemBase : ScriptableObject
     public int BuyPrice;
     public int SellPrice;
 
-
     public string GetName()
     {
         return Localizer.GetText(NameKey);
