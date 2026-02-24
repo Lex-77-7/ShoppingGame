@@ -42,6 +42,15 @@ public class PlayerLife : MonoBehaviour, IConsume
 
             return true;
         }
+        else if (item is ItemFood food)
+        { //Una vez tengamos stamina cambiar a stamina.
+            if (life >= MaxLife) return false;
+            life += food.Energy;
+            life = Mathf.Clamp(life, 0, MaxLife);
+            OnLifeChanged?.Invoke(life);
+            return true;
+
+        }
 
         return false;
     }
