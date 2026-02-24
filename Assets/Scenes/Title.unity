@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c5d98f0beb49d479c963402a8f179d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanguageButton
-  Language: 0
+  Language: 1
 --- !u!114 &1685703082
 MonoBehaviour:
   m_ObjectHideFlags: 0
