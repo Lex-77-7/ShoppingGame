@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_SHIELD
   Image: {fileID: 21300000, guid: 81facf57f8b7eff448689227492fb7f2, type: 3}
   IsStackable: 0
-  BuyPrice: 95
-  SellPrice: 95
+  Price: 250

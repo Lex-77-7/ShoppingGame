@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_BANANA
   Image: {fileID: 21300000, guid: 86727d846bcd8a648bedb1a314f78cf7, type: 3}
   IsStackable: 0
-  BuyPrice: 45
-  SellPrice: 45
+  Price: 25
   Energy: 25

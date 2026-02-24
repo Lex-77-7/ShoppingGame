@@ -16,7 +16,6 @@ public class Localizer : MonoBehaviour
 
     private void Awake()
     {
-       
         Instance = this;
         currentLanguage = DefaultLanguage;
 
@@ -26,7 +25,6 @@ public class Localizer : MonoBehaviour
     public static void SetLanguage(Language language)
     {
         Instance.currentLanguage = language;
-
         OnLanguageChange?.Invoke();
     }
 
@@ -50,6 +48,7 @@ public class Localizer : MonoBehaviour
 
         Data.Add(entries[0], languageData);
     }
+
     public static string GetText(string textKey)
     {
         return Instance.Data[textKey].GetText(Instance.currentLanguage);

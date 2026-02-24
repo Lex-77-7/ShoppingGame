@@ -6,17 +6,22 @@ public class MusicManager : MonoBehaviour
 
     public AudioSource cashAudio;
     public AudioSource hurtAudio;
+    public AudioSource restoreAudio;
 
     private void OnEnable()
     {
         wallet.OnWalletChange += PlayMoneySound;
+
         LifeEventEmitter.OnTakeDamage += PlayHurtSound;
+        LifeEventEmitter.OnHeal += PlayRestoreSound;
     }
 
     private void OnDisable()
     {
         wallet.OnWalletChange -= PlayMoneySound;
+
         LifeEventEmitter.OnTakeDamage -= PlayHurtSound;
+        LifeEventEmitter.OnHeal -= PlayRestoreSound;
     }
 
     private void PlayMoneySound()
@@ -29,5 +34,11 @@ public class MusicManager : MonoBehaviour
     {
         AudioClip hurtClip = hurtAudio.clip;
         hurtAudio.PlayOneShot(hurtClip);
+    }
+
+    private void PlayRestoreSound()
+    {
+        AudioClip restoreClip = restoreAudio.clip;
+        restoreAudio.PlayOneShot(restoreClip);
     }
 }

@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_CHEESE
   Image: {fileID: 21300000, guid: e8ed072f6d3fb5e478fd99c7b9c09194, type: 3}
   IsStackable: 0
-  BuyPrice: 25
-  SellPrice: 25
+  Price: 50
   Energy: 25

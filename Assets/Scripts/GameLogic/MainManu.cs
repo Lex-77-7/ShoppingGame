@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Gameplay");
     }
+
     public void Update()
     {
         if ((Keyboard.current != null) && Keyboard.current.enterKey.wasPressedThisFrame)

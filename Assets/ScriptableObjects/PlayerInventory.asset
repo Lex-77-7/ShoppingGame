@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a61c7e5e3699849ad45267f1c175bf, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  ItemSlots:
-  - Item: {fileID: 11400000, guid: 80dd8681fb9029d4bba616dfc7cd04fe, type: 2}
+  itemSlots:
+  - Item: {fileID: 11400000, guid: 65b28b0a413ecfb41ab9c3cbc8a934ea, type: 2}
     Quantity: 1
-  - Item: {fileID: 11400000, guid: 21882efde8071d6468fc8aa65910310c, type: 2}
+  - Item: {fileID: 11400000, guid: 89f0f8af3bfbd304db50edd2d5debdfa, type: 2}
     Quantity: 1
-  - Item: {fileID: 11400000, guid: 23a257a14905b30438736dfa8b876bac, type: 2}
+  - Item: {fileID: 11400000, guid: f7740f32adf18214f8f52c1aeedd7b1f, type: 2}
+    Quantity: 3
+  - Item: {fileID: 11400000, guid: 9c6fd6c048b9a8d4594e4850e871ecee, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 125654d1a6f8c104abddaf9414c76118, type: 2}
+    Quantity: 3
+  - Item: {fileID: 11400000, guid: 0e64c6eb2ae73b444b8ef6f0bd20f2c4, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 5e8809598251d6b4982e9fd26fa61ae7, type: 2}
     Quantity: 1

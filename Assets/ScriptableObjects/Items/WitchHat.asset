@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_WITCH_HAT
   Image: {fileID: 21300000, guid: f6dc60e4f61c6cf48be1f84b384de047, type: 3}
   IsStackable: 0
-  BuyPrice: 300
-  SellPrice: 300
+  Price: 200

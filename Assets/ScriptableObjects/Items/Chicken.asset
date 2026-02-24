@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_CHICKEN
   Image: {fileID: 21300000, guid: c64f80766dfa7104387c587cdd0a74bd, type: 3}
   IsStackable: 0
-  BuyPrice: 30
-  SellPrice: 30
+  Price: 30
   Energy: 50

@@ -8,7 +8,7 @@ public class ItemSlot
 
     public ItemSlot(ItemBase item)
     {
-        this.Item = item;
+        Item = item;
         Quantity = 1;
     }
 

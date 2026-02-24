@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_RED_POTION
   Image: {fileID: 21300000, guid: a6d90b89cffc77e488ba1fbc4c5b3784, type: 3}
   IsStackable: 1
-  BuyPrice: 30
-  SellPrice: 30
+  Price: 65
   Health: 25

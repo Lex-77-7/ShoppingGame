@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_APPLE
   Image: {fileID: 21300000, guid: 5c031a23d24fa3a4c9c0519cde358910, type: 3}
   IsStackable: 1
-  BuyPrice: 100
-  SellPrice: 100
+  Price: 20
   Energy: 75

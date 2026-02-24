@@ -38,15 +38,17 @@ public class ShopTransactionHandler : MonoBehaviour
             OnTransactionComplete?.Invoke(TransactionResult.InvalidItem);
             return;
         }
-        if (!PlayerWallet.CanAfford(item.BuyPrice))
+
+        if (!PlayerWallet.CanAfford(item.Price))
         {
             OnTransactionComplete?.Invoke(TransactionResult.InsufficientFunds);
             return;
         }
 
-        PlayerWallet.Spend(item.BuyPrice);
+        PlayerWallet.Spend(item.Price);
         ShopInventory.RemoveItem(item);
         PlayerInventory.AddItem(item);
+
         OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
 
@@ -58,9 +60,10 @@ public class ShopTransactionHandler : MonoBehaviour
             return;
         }
 
-        PlayerWallet.Earn(item.SellPrice);
+        PlayerWallet.Earn(item.Price);
         PlayerInventory.RemoveItem(item);
         ShopInventory.AddItem(item);
+
         OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
 }

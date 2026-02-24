@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424f4f40ea5e2fe4aa60e43d06213015, type: 3}
   m_Name: PinkPotion
   m_EditorClassIdentifier: Assembly-CSharp::ItemPotion
-  NameKey: 'SHOP_PINK_POTION '
+  NameKey: SHOP_PINK_POTION
   DescriptionKey: DESCRIPTION_PINK_POTION
   Image: {fileID: 21300000, guid: 2f32dadc61f90084d9ece807a6a9fde0, type: 3}
   IsStackable: 1
-  BuyPrice: 120
-  SellPrice: 120
+  Price: 150
   Health: 75

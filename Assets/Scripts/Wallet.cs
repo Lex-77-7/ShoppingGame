@@ -8,17 +8,15 @@ public class Wallet : MonoBehaviour
 
     public Action OnWalletChange;
 
-    public bool CanAfford(int amount) => gold >= amount;
+    public bool CanAfford(int amount) => (gold >= amount);
 
     public void Spend(int amount)
     {
-        if (!CanAfford(amount))
+        if (CanAfford(amount))
         {
-            throw new InvalidOperationException("There is not enough gold in this wallet to perform this transaction");
+            gold -= amount;
+            OnWalletChange?.Invoke();
         }
-
-        gold -= amount;
-        OnWalletChange?.Invoke();
     }
 
     public void Earn(int amount)

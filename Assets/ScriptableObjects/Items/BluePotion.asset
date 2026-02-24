@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_BLUE_POTION
   Image: {fileID: 21300000, guid: f672e97465763364c97fec3a73facb72, type: 3}
   IsStackable: 1
-  BuyPrice: 30
-  SellPrice: 30
+  Price: 40
   Health: 50

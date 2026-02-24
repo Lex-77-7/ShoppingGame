@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_DAGGER
   Image: {fileID: 21300000, guid: b18590899b535bb459ed81863c1b8634, type: 3}
   IsStackable: 0
-  BuyPrice: 200
-  SellPrice: 200
+  Price: 150

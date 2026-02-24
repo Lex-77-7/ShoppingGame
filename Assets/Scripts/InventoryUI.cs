@@ -76,12 +76,10 @@ public class InventoryUI : MonoBehaviour
 
     public void SetSelectedSlot(ItemSlotUI slot)
     {
-        if (selectedSlot != null)
-            selectedSlot.SetSelected(false);
+        if (selectedSlot != null) selectedSlot.SetSelected(false);
 
         selectedSlot = slot;
         selectedSlot.SetSelected(true);
-        Debug.Log("Selected Slot: " + slot.GetItem().NameKey);
     }
 
     public ItemSlotUI GetSelectedSlot()
@@ -111,11 +109,11 @@ public class InventoryUI : MonoBehaviour
         if (item is Consummable consummable)
         {
             bool isConsumed = consummable.ConsumeItem(consumer);
+
             if (isConsumed)
             {
                 Inventory.RemoveItem(item);
             }
-
         }
     }
 }

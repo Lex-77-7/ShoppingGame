@@ -16,6 +16,5 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_BREAD
   Image: {fileID: 21300000, guid: 2a5825c7357c2b540b95c6ef0ebe3a47, type: 3}
   IsStackable: 0
-  BuyPrice: 10
-  SellPrice: 10
+  Price: 30
   Energy: 50

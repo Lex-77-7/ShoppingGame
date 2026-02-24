@@ -10,6 +10,7 @@ public class LifeEventEmitter : MonoBehaviour
     {
         OnTakeDamage?.Invoke();
     }
+
     public void OnPressHeal()
     {
         OnHeal.Invoke();

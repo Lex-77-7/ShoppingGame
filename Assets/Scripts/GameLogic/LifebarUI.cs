@@ -5,7 +5,6 @@ public class LifebarUI : MonoBehaviour
 {
     public List<Sprite> HealthSprites;
 
-
     public void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[0];
@@ -24,7 +23,7 @@ public class LifebarUI : MonoBehaviour
     public void UpdateLifebar(int life)
     {
         int spriteIndex = Mathf.RoundToInt(
-            ((float)(100 - life) / 100f) * (HealthSprites.Count - 1)
+            ((100 - life) / 100.0f) * (HealthSprites.Count - 1)
         );
 
         gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[spriteIndex];

@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_WAND
   Image: {fileID: 21300000, guid: a1b68b70be19080479afd5058583dd11, type: 3}
   IsStackable: 0
-  BuyPrice: 450
-  SellPrice: 450
+  Price: 300

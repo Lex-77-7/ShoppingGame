@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_AXE
   Image: {fileID: 21300000, guid: 4cecc98531a62a4478a75cddc91f08e5, type: 3}
   IsStackable: 0
-  BuyPrice: 150
-  SellPrice: 150
+  Price: 50

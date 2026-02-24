@@ -1,12 +1,9 @@
-using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using static UnityEngine.Analytics.IAnalytic;
 
 public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
@@ -82,23 +79,6 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
         transform.SetParent(parentTransform.transform);
         transform.localPosition = Vector3.zero;
-
-        // TODO: Consume item
-
-        /*
-        if (hitData)
-        {
-            Debug.Log("Drop over object: " + hitData.collider.gameObject.name);
-
-            IConsume consumer = hitData.collider.gameObject.GetComponent<IConsume>();
-
-            if ((consumer != null) && (item is Consummable))
-            {
-                (item as Consummable).ConsumeItem(consumer);
-                inventory.UseItem(item);
-            }
-        }
-        */
     }
 
     public ItemBase GetItem()

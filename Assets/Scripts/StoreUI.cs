@@ -1,15 +1,15 @@
 using TMPro;
-using Unity.Multiplayer.PlayMode;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class StoreUI : MonoBehaviour
 {
-    public TextMeshProUGUI title;
-    public Image image;
-    public TextMeshProUGUI description;
-    public TextMeshProUGUI cost;
+    public Image Image;
+    public TextMeshProUGUI Title;
+    public TextMeshProUGUI Description;
+    public TextMeshProUGUI Cost;
+    public TextMeshProUGUI LifeRestore;
+
     private ItemBase SelectedItem;
 
     private void OnEnable()
@@ -26,8 +26,8 @@ public class StoreUI : MonoBehaviour
 
     private void LocalizeItem()
     {
-        title.text = SelectedItem.GetName();
-        description.text = SelectedItem.GetDescription();
+        Title.text = SelectedItem.GetName();
+        Description.text = SelectedItem.GetDescription();
     }
 
     private void SetShowCaseItem(ItemBase item)
@@ -35,7 +35,15 @@ public class StoreUI : MonoBehaviour
         SelectedItem = item;
         LocalizeItem();
 
-        image.sprite = item.Image;
-        cost.text = "Cost: " + item.BuyPrice; // TODO: find which inventory is it to put buy price OR sell price
+        Image.sprite = item.Image;
+        Cost.text = "Cost: " + item.Price;
+
+        if (item is Consummable consummable)
+        {
+            LifeRestore.text = "Life: +" + consummable.LifeRestore;
+        } else
+        {
+            LifeRestore.text = "";
+        }
     }
 }

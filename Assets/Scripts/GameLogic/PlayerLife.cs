@@ -4,14 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour, IConsume
 {
-    [SerializeField] private int MaxLife = 100;
+    [SerializeField] private int maxLife = 100;
     private int life; //Goes from 100 -> 75 -> 50 -> 25 -> 0
+
     public static event Action<int> OnLifeChanged;
 
     public void Awake()
     {
-        life = MaxLife;
+        life = maxLife;
     }
+
     private void OnEnable()
     {
         LifeEventEmitter.OnTakeDamage += LoseLife;
@@ -32,24 +34,15 @@ public class PlayerLife : MonoBehaviour, IConsume
 
     public bool Consume(Consummable item)
     {
-        if (item is ItemPotion potion)
+        if (item is Consummable consummable)
         {
-            if (life >= MaxLife) return false;
+            if (life >= maxLife) return false;
 
-            life += potion.Health;
-            life = Mathf.Clamp(life, 0, MaxLife);
-            OnLifeChanged?.Invoke(life);
+            life += consummable.LifeRestore;
+            life = Mathf.Clamp(life, 0, maxLife);
 
-            return true;
-        }
-        else if (item is ItemFood food)
-        { //Una vez tengamos stamina cambiar a stamina.
-            if (life >= MaxLife) return false;
-            life += food.Energy;
-            life = Mathf.Clamp(life, 0, MaxLife);
             OnLifeChanged?.Invoke(life);
             return true;
-
         }
 
         return false;

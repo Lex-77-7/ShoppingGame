@@ -16,5 +16,4 @@ MonoBehaviour:
   DescriptionKey: DESCRIPTION_TRIDENT
   Image: {fileID: 21300000, guid: 5c270be21ec8b414a8748a9ec3911e7a, type: 3}
   IsStackable: 0
-  BuyPrice: 150
-  SellPrice: 150
+  Price: 275

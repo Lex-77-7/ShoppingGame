@@ -6,25 +6,25 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 {
     [SerializeField]
-    private List<ItemSlot> ItemSlots;
-    public int Length => ItemSlots.Count;
+    private List<ItemSlot> itemSlots;
+    public int Length => itemSlots.Count;
 
     public Action OnInventoryChange;
 
     public void AddItem(ItemBase item)
     {
-        if (ItemSlots == null) ItemSlots = new List<ItemSlot>();
+        if (itemSlots == null) itemSlots = new List<ItemSlot>();
 
         var slot = GetSlot(item);
 
-        if ((slot != null) && (item.IsStackable))
+        if ((slot != null) && item.IsStackable)
         {
             slot.AddOne();
         }
         else
         {
             slot = new ItemSlot(item);
-            ItemSlots.Add(slot);
+            itemSlots.Add(slot);
         }
 
         OnInventoryChange?.Invoke();
@@ -32,7 +32,7 @@ public class Inventory : ScriptableObject
 
     public void RemoveItem(ItemBase item)
     {
-        if (ItemSlots == null) return;
+        if (itemSlots == null) return;
 
         var slot = GetSlot(item);
 
@@ -44,21 +44,22 @@ public class Inventory : ScriptableObject
                 RemoveSlot(slot);
             }
         }
+
         OnInventoryChange?.Invoke();
     }
 
     private void RemoveSlot(ItemSlot slot)
     {
-        ItemSlots.Remove(slot);
+        itemSlots.Remove(slot);
     }
 
     private ItemSlot GetSlot(ItemBase item)
     {
-        for (int i = 0; i < ItemSlots.Count; i++)
+        for (int i = 0; i < itemSlots.Count; i++)
         {
-            if (ItemSlots[i].HasItem(item))
+            if (itemSlots[i].HasItem(item))
             {
-                return ItemSlots[i];
+                return itemSlots[i];
             }
         }
 
@@ -67,6 +68,6 @@ public class Inventory : ScriptableObject
 
     public ItemSlot GetSlot(int i)
     {
-        return ItemSlots[i];
+        return itemSlots[i];
     }
 }

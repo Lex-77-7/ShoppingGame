@@ -7,8 +7,7 @@ public class ItemBase : ScriptableObject
     public string DescriptionKey;
     public Sprite Image;
     public bool IsStackable;
-    public int BuyPrice;
-    public int SellPrice;
+    public int Price;
 
     public string GetName()
     {
