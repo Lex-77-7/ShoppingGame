@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemBase
   NameKey: 
   DescriptionKey: 
-  Image: {fileID: 21300000, guid: 419d5218cbfe9304fbc21a6a7633e26e, type: 3}
+  Image: {fileID: 21300000, guid: b18590899b535bb459ed81863c1b8634, type: 3}
   IsStackable: 0
   BuyPrice: 200
   SellPrice: 200
