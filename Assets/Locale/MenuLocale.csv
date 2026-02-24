@@ -1,12 +1,17 @@
 Key;English;Catalan;Spanish
 TITLE_MENU_START;Start;Començar;Empezar
 TITLE_MENU_MUSIC;Music;Musica;Música
+TITLE_MENU_LANGUAGE;Language;Lenguatge;Lenguaje
+TITLE_MENU;Shopping trip;Viatge de compras;Viaje de compras
 GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
 GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Item
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
+GAMEPLAY_LIFE;Life;Vida;Vida
+GAMEPLAY_COST;Cost;Cost;Coste
 ENDING_MENU_REPLAY;Replay;Repetir;Repetir
 ENDING_MENU_QUIT;Quit;Sortir;Salir
+ENDING_MENU_TITLE;Shopping trip ended;Compras acabades;Compras terminadas
 SHOP_APPLE;Apple;Poma;Manzana
 SHOP_AXE;Axe;Destral;Hacha
 SHOP_BANANA;Banana;Banana;Banana

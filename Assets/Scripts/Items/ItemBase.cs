@@ -8,6 +8,7 @@ public class ItemBase : ScriptableObject
     public Sprite Image;
     public bool IsStackable;
     public int Price;
+    public string PriceKey;
 
     public string GetName()
     {
@@ -17,5 +18,10 @@ public class ItemBase : ScriptableObject
     public string GetDescription()
     {
         return Localizer.GetText(DescriptionKey);
+    }
+
+    public string getPriceKey()
+    {
+        return Localizer.GetText(PriceKey) + " " + Price;
     }
 }

@@ -17,4 +17,5 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 2f32dadc61f90084d9ece807a6a9fde0, type: 3}
   IsStackable: 1
   Price: 150
+  PriceKey: GAMEPLAY_COST
   Health: 75

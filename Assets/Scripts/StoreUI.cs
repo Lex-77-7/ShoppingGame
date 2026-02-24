@@ -28,6 +28,7 @@ public class StoreUI : MonoBehaviour
     {
         Title.text = SelectedItem.GetName();
         Description.text = SelectedItem.GetDescription();
+        Cost.text = SelectedItem.getPriceKey();
     }
 
     private void SetShowCaseItem(ItemBase item)
@@ -36,7 +37,6 @@ public class StoreUI : MonoBehaviour
         LocalizeItem();
 
         Image.sprite = item.Image;
-        Cost.text = "Cost: " + item.Price;
 
         if (item is Consummable consummable)
         {

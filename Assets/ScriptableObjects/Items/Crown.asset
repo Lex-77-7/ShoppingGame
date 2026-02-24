@@ -17,3 +17,4 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 5f19287215c8efe4391b7c64b0d6023b, type: 3}
   IsStackable: 0
   Price: 250
+  PriceKey: GAMEPLAY_COST
