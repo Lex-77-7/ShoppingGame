@@ -5,8 +5,10 @@ public class ItemPotion : Consummable
 {
     public int Health;
 
-    public override void ConsumeItem(IConsume consumer)
+    public override bool ConsumeItem(IConsume consumer)
     {
-        // Use item
+        if (consumer == null) return false;
+        consumer.Consume(this);
+        return true;
     }
 }

@@ -1074,6 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e885fc2cb04f74889813ae65104556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  MaxLife: 100
 --- !u!1 &367612509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,9 +2154,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 805177635}
-        m_TargetAssemblyTypeName: TakeDamageButton, Assembly-CSharp
-        m_MethodName: OnPressTakeDamage
+      - m_Target: {fileID: 144591288}
+        m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
+        m_MethodName: OnPressConsumeButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3769,7 +3770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1809346936}
-        m_TargetAssemblyTypeName: TakeDamageButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: LifeEventEmitter, Assembly-CSharp
         m_MethodName: OnPressTakeDamage
         m_Mode: 1
         m_Arguments:

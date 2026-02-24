@@ -11,5 +11,5 @@ public interface IPickUp
 
 public interface IConsume
 {
-    void Consume(Consummable item);
+    bool Consume(Consummable item);
 }

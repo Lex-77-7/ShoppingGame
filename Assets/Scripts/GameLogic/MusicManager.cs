@@ -10,13 +10,13 @@ public class MusicManager : MonoBehaviour
     private void OnEnable()
     {
         wallet.OnWalletChange += PlayMoneySound;
-        TakeDamageButton.OnTakeDamage += PlayHurtSound;
+        LifeEventEmitter.OnTakeDamage += PlayHurtSound;
     }
 
     private void OnDisable()
     {
         wallet.OnWalletChange -= PlayMoneySound;
-        TakeDamageButton.OnTakeDamage -= PlayHurtSound;
+        LifeEventEmitter.OnTakeDamage -= PlayHurtSound;
     }
 
     private void PlayMoneySound()

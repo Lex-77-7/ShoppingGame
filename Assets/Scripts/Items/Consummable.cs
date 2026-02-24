@@ -1,4 +1,4 @@
 public abstract class Consummable : ItemBase
 {
-    public abstract void ConsumeItem(IConsume consumer);
+    public abstract bool ConsumeItem(IConsume consumer);
 }

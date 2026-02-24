@@ -9,10 +9,13 @@ public class InventoryUI : MonoBehaviour
 
     private List<GameObject> itemSlots;
     private ItemSlotUI selectedSlot;
+    private IConsume consumer;
+
     public event Action<ItemBase> OnSelectedSlotAction; //Buy, sell, give... when it changes inventories
 
     private void Start()
     {
+        consumer = FindFirstObjectByType<PlayerLife>();
         FillInventoryUI(Inventory);
     }
 
@@ -96,5 +99,21 @@ public class InventoryUI : MonoBehaviour
     public void UseItem(ItemBase item)
     {
         Inventory.RemoveItem(item);
+    }
+
+    public void OnPressConsumeButton()
+    {
+        if (selectedSlot == null) return;
+        ItemBase item = selectedSlot.GetItem();
+
+        if (item is Consummable consummable)
+        {
+            bool isConsumed = consummable.ConsumeItem(consumer);
+            if (isConsumed)
+            {
+                Inventory.RemoveItem(item);
+            }
+
+        }
     }
 }

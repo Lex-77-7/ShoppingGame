@@ -5,8 +5,11 @@ public class ItemFood : Consummable
 {
     public int Energy;
 
-    public override void ConsumeItem(IConsume consumer)
+    public override bool ConsumeItem(IConsume consumer)
     {
         // Use item
+        if (consumer == null) return false;
+        consumer.Consume(this);
+        return true;
     }
 }
