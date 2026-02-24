@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Pizza
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  NameKey: 
-  DescriptionKey: 
+  NameKey: SHOP_PIZZA
+  DescriptionKey: DESCRIPTION_PIZZA
   Image: {fileID: 21300000, guid: 2898b76d39a0a9045b4687724220a0c8, type: 3}
   IsStackable: 0
   BuyPrice: 5

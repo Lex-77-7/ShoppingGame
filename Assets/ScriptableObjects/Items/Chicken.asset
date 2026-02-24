@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Chicken
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  NameKey: 
-  DescriptionKey: 
+  NameKey: SHOP_CHICKEN
+  DescriptionKey: DESCRIPTION_CHICKEN
   Image: {fileID: 21300000, guid: c64f80766dfa7104387c587cdd0a74bd, type: 3}
   IsStackable: 0
   BuyPrice: 30

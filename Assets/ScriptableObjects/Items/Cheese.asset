@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Cheese
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  NameKey: 
-  DescriptionKey: 
+  NameKey: SHOP_CHEESE
+  DescriptionKey: DESCRIPTION_CHEESE
   Image: {fileID: 21300000, guid: e8ed072f6d3fb5e478fd99c7b9c09194, type: 3}
   IsStackable: 0
   BuyPrice: 25

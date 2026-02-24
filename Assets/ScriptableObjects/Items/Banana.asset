@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
   m_Name: Banana
   m_EditorClassIdentifier: Assembly-CSharp::ItemFood
-  NameKey: 
-  DescriptionKey: 
+  NameKey: SHOP_BANANA
+  DescriptionKey: DESCRIPTION_BANANA
   Image: {fileID: 21300000, guid: 86727d846bcd8a648bedb1a314f78cf7, type: 3}
   IsStackable: 0
   BuyPrice: 45
