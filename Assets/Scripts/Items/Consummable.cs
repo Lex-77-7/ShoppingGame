@@ -4,9 +4,9 @@ public abstract class Consummable : ItemBase
 
     public string LifeRestoreKey;
 
-    public string GetLifeRestoreKey()
+    public string GetLifeRestore()
     {
-        return Localizer.GetText(LifeRestoreKey) + " ";
+        return Localizer.GetText(LifeRestoreKey) + ": +" + LifeRestore;
     }
 
     public abstract bool ConsumeItem(IConsume consumer);

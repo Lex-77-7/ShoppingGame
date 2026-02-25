@@ -5,15 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewInventory", menuName = "Inventory/Inventory")]
 public class Inventory : ScriptableObject
 {
-    [SerializeField]
-    private List<ItemSlot> itemSlots;
+    [SerializeField] private List<ItemSlot> itemSlots;
     public int Length => itemSlots.Count;
 
     public Action OnInventoryChange;
 
     public void AddItem(ItemBase item)
     {
-        if (itemSlots == null) itemSlots = new List<ItemSlot>();
+        itemSlots ??= new List<ItemSlot>();
 
         var slot = GetSlot(item);
 
@@ -34,11 +33,12 @@ public class Inventory : ScriptableObject
     {
         if (itemSlots == null) return;
 
-        var slot = GetSlot(item);
+        ItemSlot slot = GetSlot(item);
 
         if (slot != null)
         {
             slot.RemoveOne();
+
             if (slot.IsEmpty())
             {
                 RemoveSlot(slot);

@@ -23,7 +23,7 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         Image.sprite = slot.Item.Image;
 
         QuantityText.text = slot.Quantity.ToString();
-        QuantityText.enabled = slot.Quantity > 1;
+        QuantityText.enabled = (slot.Quantity > 1);
 
         item = slot.Item;
         this.inventory = inventory;
@@ -45,7 +45,6 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         parentTransform = transform.parent;
 
         transform.SetParent(canvas.transform, true);
-
         transform.SetAsLastSibling();
     }
 
@@ -56,23 +55,23 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        List<RaycastResult> ray = new();
-        EventSystem.current.RaycastAll(eventData, ray);
+        List<RaycastResult> raycastResult = new();
+        EventSystem.current.RaycastAll(eventData, raycastResult);
 
         InventoryUI targetInventory = null;
 
-        foreach (RaycastResult res in ray)
+        foreach (RaycastResult res in raycastResult)
         {
-            InventoryUI found = res.gameObject.GetComponentInParent<InventoryUI>();
+            InventoryUI foundInventory = res.gameObject.GetComponentInParent<InventoryUI>();
 
-            if (found != null)
+            if (foundInventory != null)
             {
-                targetInventory = found;
+                targetInventory = foundInventory;
                 break;
             }
         }
 
-        if (targetInventory != null && targetInventory != inventory)
+        if ((targetInventory != null) && (targetInventory != inventory))
         {
             inventory.SubmitSelectedSlot();
         }

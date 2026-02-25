@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class LanguageButton : MonoBehaviour, IPointerClickHandler
+public class LanguageButton : MonoBehaviour
 {
     public Language Language;
     private Text localizedText;
@@ -13,7 +12,7 @@ public class LanguageButton : MonoBehaviour, IPointerClickHandler
         localizedText.text = Language.ToString();
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void PressLanguageButton()
     {
         Language += 1;
         if (Language > Language.Español) Language = Language.English;

@@ -11,7 +11,6 @@ public class MusicManager : MonoBehaviour
     private void OnEnable()
     {
         wallet.OnWalletChange += PlayMoneySound;
-
         LifeEventEmitter.OnTakeDamage += PlayHurtSound;
         InventoryUI.OnConsumedItem += PlayRestoreSound;
     }
@@ -19,7 +18,6 @@ public class MusicManager : MonoBehaviour
     private void OnDisable()
     {
         wallet.OnWalletChange -= PlayMoneySound;
-
         LifeEventEmitter.OnTakeDamage -= PlayHurtSound;
         InventoryUI.OnConsumedItem -= PlayRestoreSound;
     }

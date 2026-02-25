@@ -11,7 +11,7 @@ public class InventoryUI : MonoBehaviour
     private ItemSlotUI selectedSlot;
     private IConsume consumer;
 
-    public event Action<ItemBase> OnSelectedSlotAction; //Buy, sell, give... when it changes inventories
+    public event Action<ItemBase> OnSelectedSlotAction; // Buy, sell, give... when it changes inventories
     public static event Action OnConsumedItem;
 
     private void Start()
@@ -23,13 +23,11 @@ public class InventoryUI : MonoBehaviour
     private void OnEnable()
     {
         Inventory.OnInventoryChange += UpdateInventoryUI;
-        Localizer.OnLanguageChange += UpdateInventoryUI;
     }
 
     private void OnDisable()
     {
         Inventory.OnInventoryChange -= UpdateInventoryUI;
-        Localizer.OnLanguageChange -= UpdateInventoryUI;
     }
 
     private void UpdateInventoryUI()
@@ -83,11 +81,6 @@ public class InventoryUI : MonoBehaviour
         selectedSlot.SetSelected(true);
     }
 
-    public ItemSlotUI GetSelectedSlot()
-    {
-        return selectedSlot;
-    }
-
     public void SubmitSelectedSlot()
     {
         if (selectedSlot == null) return;
@@ -97,14 +90,10 @@ public class InventoryUI : MonoBehaviour
         selectedSlot = null;
     }
 
-    public void UseItem(ItemBase item)
-    {
-        Inventory.RemoveItem(item);
-    }
-
     public void OnPressConsumeButton()
     {
         if (selectedSlot == null) return;
+
         ItemBase item = selectedSlot.GetItem();
 
         if (item is Consummable consummable)

@@ -8,8 +8,8 @@ GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
 GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Objeto
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
-GAMEPLAY_LIFE;Life:;Vida:;Vida:
-GAMEPLAY_COST;Cost:;Cost:;Coste:
+GAMEPLAY_LIFE;Life;Vida;Vida
+GAMEPLAY_COST;Cost;Cost;Coste
 ENDING_MENU_REPLAY;Replay;Repetir;Repetir
 ENDING_MENU_QUIT;Quit;Sortir;Salir
 ENDING_MENU_TITLE;Shopping trip ended;Compres acabades;Compras terminadas
