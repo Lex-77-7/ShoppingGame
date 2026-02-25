@@ -4,16 +4,16 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] private Wallet wallet;
 
-    public AudioSource cashAudio;
-    public AudioSource hurtAudio;
-    public AudioSource restoreAudio;
+    public AudioSource CashAudio;
+    public AudioSource HurtAudio;
+    public AudioSource RestoreAudio;
 
     private void OnEnable()
     {
         wallet.OnWalletChange += PlayMoneySound;
 
         LifeEventEmitter.OnTakeDamage += PlayHurtSound;
-        LifeEventEmitter.OnHeal += PlayRestoreSound;
+        InventoryUI.OnConsumedItem += PlayRestoreSound;
     }
 
     private void OnDisable()
@@ -21,24 +21,24 @@ public class MusicManager : MonoBehaviour
         wallet.OnWalletChange -= PlayMoneySound;
 
         LifeEventEmitter.OnTakeDamage -= PlayHurtSound;
-        LifeEventEmitter.OnHeal -= PlayRestoreSound;
+        InventoryUI.OnConsumedItem -= PlayRestoreSound;
     }
 
     private void PlayMoneySound()
     {
-        AudioClip cashClip = cashAudio.clip;
-        cashAudio.PlayOneShot(cashClip);
+        AudioClip cashClip = CashAudio.clip;
+        CashAudio.PlayOneShot(cashClip);
     }
 
     private void PlayHurtSound()
     {
-        AudioClip hurtClip = hurtAudio.clip;
-        hurtAudio.PlayOneShot(hurtClip);
+        AudioClip hurtClip = HurtAudio.clip;
+        HurtAudio.PlayOneShot(hurtClip);
     }
 
     private void PlayRestoreSound()
     {
-        AudioClip restoreClip = restoreAudio.clip;
-        restoreAudio.PlayOneShot(restoreClip);
+        AudioClip restoreClip = RestoreAudio.clip;
+        RestoreAudio.PlayOneShot(restoreClip);
     }
 }

@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 139728844}
   - component: {fileID: 139728845}
   m_Layer: 5
-  m_Name: Frame02
+  m_Name: StoreFrame02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,16 +221,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139728840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9952331, y: 0.9952331, z: 0.9952331}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 657939387}
+  m_Father: {fileID: 367612513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -224}
+  m_AnchoredPosition: {x: 427.95023, y: -222.93224}
   m_SizeDelta: {x: 916.9, y: 558.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139728842
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 144591289}
   - component: {fileID: 144591288}
   m_Layer: 5
-  m_Name: Frame02
+  m_Name: PlayerFrame02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,9 +709,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   wallet: {fileID: 336589598}
-  cashAudio: {fileID: 236216740}
-  hurtAudio: {fileID: 236216742}
-  restoreAudio: {fileID: 236216744}
+  CashAudio: {fileID: 236216740}
+  HurtAudio: {fileID: 236216742}
+  RestoreAudio: {fileID: 236216744}
 --- !u!82 &236216740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,7 @@ GameObject:
   - component: {fileID: 367612511}
   - component: {fileID: 367612510}
   m_Layer: 5
-  m_Name: PlayerInventoryCanvas
+  m_Name: InventoriesCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1270,6 +1270,8 @@ RectTransform:
   m_Children:
   - {fileID: 542963001}
   - {fileID: 144591285}
+  - {fileID: 1472558093}
+  - {fileID: 139728841}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1734,7 +1736,7 @@ GameObject:
   - component: {fileID: 542963003}
   - component: {fileID: 542963002}
   m_Layer: 5
-  m_Name: Frame01
+  m_Name: PlayerFrame01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2031,109 +2033,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &657939383
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 657939387}
-  - component: {fileID: 657939386}
-  - component: {fileID: 657939385}
-  - component: {fileID: 657939384}
-  m_Layer: 5
-  m_Name: StoreInventoryCanvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &657939384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657939383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &657939385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657939383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1930, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &657939386
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657939383}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 573014285}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: -5
-  m_TargetDisplay: 0
---- !u!224 &657939387
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657939383}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1472558093}
-  - {fileID: 139728841}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &770015641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,18 +2248,6 @@ MonoBehaviour:
       - m_Target: {fileID: 144591288}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
         m_MethodName: OnPressConsumeButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 805177635}
-        m_TargetAssemblyTypeName: LifeEventEmitter, Assembly-CSharp
-        m_MethodName: OnPressHeal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3515,7 +3402,7 @@ GameObject:
   - component: {fileID: 1472558095}
   - component: {fileID: 1472558094}
   m_Layer: 5
-  m_Name: Frame01
+  m_Name: StoreFrame01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3528,16 +3415,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472558092}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9952331, y: 0.9952331, z: 0.9952331}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 657939387}
+  m_Father: {fileID: 367612513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -222}
+  m_AnchoredPosition: {x: 427.95023, y: -220.94176}
   m_SizeDelta: {x: 937.4, y: 579.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472558094
@@ -4514,7 +4401,6 @@ SceneRoots:
   - {fileID: 1893906002}
   - {fileID: 1038279405}
   - {fileID: 367612513}
-  - {fileID: 657939387}
   - {fileID: 994248853}
   - {fileID: 236216741}
   - {fileID: 1771432607}

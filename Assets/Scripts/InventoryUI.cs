@@ -12,6 +12,7 @@ public class InventoryUI : MonoBehaviour
     private IConsume consumer;
 
     public event Action<ItemBase> OnSelectedSlotAction; //Buy, sell, give... when it changes inventories
+    public static event Action OnConsumedItem;
 
     private void Start()
     {
@@ -112,6 +113,7 @@ public class InventoryUI : MonoBehaviour
 
             if (isConsumed)
             {
+                OnConsumedItem?.Invoke();
                 Inventory.RemoveItem(item);
             }
         }
