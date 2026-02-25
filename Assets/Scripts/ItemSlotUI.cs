@@ -16,7 +16,7 @@ public class ItemSlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private ItemBase item;
     private InventoryUI inventory;
 
-    public static event Action <ItemBase> OnItemClicked;
+    public static event Action<ItemBase> OnItemClicked;
 
     public void Initialize(ItemSlot slot, InventoryUI inventory)
     {

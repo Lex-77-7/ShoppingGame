@@ -4,11 +4,6 @@ public interface ICanBePicked
     ItemBase GetItem();
 }
 
-public interface IPickUp
-{
-    void PickUp(ICanBePicked item);
-}
-
 public interface IConsume
 {
     bool Consume(Consummable item);

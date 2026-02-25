@@ -1,0 +1,138 @@
+root = true
+
+########################################
+# Global settings
+########################################
+
+[*]
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+########################################
+# C# files
+########################################
+
+[*.cs]
+
+########################
+# Formatting
+########################
+
+csharp_new_line_before_open_brace = all
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_around_binary_operators = before_and_after
+csharp_space_after_cast = false
+
+########################
+# Parentheses rules
+########################
+
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_operators = always_for_clarity:warning
+
+########################
+# Naming Rules
+########################
+
+# Classes - TitleCase
+dotnet_naming_rule.classes_should_be_titlecase.severity = warning
+dotnet_naming_rule.classes_should_be_titlecase.symbols = classes
+dotnet_naming_rule.classes_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.classes.applicable_kinds = class
+dotnet_naming_symbols.classes.applicable_accessibilities = *
+dotnet_naming_symbols.classes.required_modifiers = 
+
+# Structs - TitleCase
+dotnet_naming_rule.structs_should_be_titlecase.severity = warning
+dotnet_naming_rule.structs_should_be_titlecase.symbols = structs
+dotnet_naming_rule.structs_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.structs.applicable_kinds = struct
+dotnet_naming_symbols.structs.applicable_accessibilities = *
+dotnet_naming_symbols.structs.required_modifiers = 
+
+# Enums - TitleCase
+dotnet_naming_rule.enums_should_be_titlecase.severity = warning
+dotnet_naming_rule.enums_should_be_titlecase.symbols = enums
+dotnet_naming_rule.enums_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.enums.applicable_kinds = enum
+dotnet_naming_symbols.enums.applicable_accessibilities = *
+dotnet_naming_symbols.enums.required_modifiers = 
+
+# Enum Members - TitleCase
+dotnet_naming_rule.enum_members_should_be_titlecase.severity = warning
+dotnet_naming_rule.enum_members_should_be_titlecase.symbols = enum_members
+dotnet_naming_rule.enum_members_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.enum_members.applicable_kinds = enum_member
+dotnet_naming_symbols.enum_members.applicable_accessibilities = *
+dotnet_naming_symbols.enum_members.required_modifiers = 
+
+# Methods - TitleCase
+dotnet_naming_rule.methods_should_be_titlecase.severity = warning
+dotnet_naming_rule.methods_should_be_titlecase.symbols = methods
+dotnet_naming_rule.methods_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.methods.applicable_kinds = method
+dotnet_naming_symbols.methods.applicable_accessibilities = *
+dotnet_naming_symbols.methods.required_modifiers = 
+
+# Public Fields - TitleCase
+dotnet_naming_rule.public_fields_should_be_titlecase.severity = warning
+dotnet_naming_rule.public_fields_should_be_titlecase.symbols = public_fields
+dotnet_naming_rule.public_fields_should_be_titlecase.style = titlecase_style
+
+dotnet_naming_symbols.public_fields.applicable_kinds = field
+dotnet_naming_symbols.public_fields.applicable_accessibilities = public
+dotnet_naming_symbols.public_fields.required_modifiers = 
+
+# Private Fields - lowerCase
+dotnet_naming_rule.private_fields_should_be_lowercase.severity = warning
+dotnet_naming_rule.private_fields_should_be_lowercase.symbols = private_fields
+dotnet_naming_rule.private_fields_should_be_lowercase.style = lowercase_style
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_symbols.private_fields.required_modifiers = 
+
+# Parameters - lowerCase
+dotnet_naming_rule.parameters_should_be_lowercase.severity = warning
+dotnet_naming_rule.parameters_should_be_lowercase.symbols = parameters
+dotnet_naming_rule.parameters_should_be_lowercase.style = lowercase_style
+
+dotnet_naming_symbols.parameters.applicable_kinds = parameter
+dotnet_naming_symbols.parameters.applicable_accessibilities = *
+dotnet_naming_symbols.parameters.required_modifiers = 
+
+# Constants - lowerCase
+dotnet_naming_rule.constants_should_be_lowercase.severity = warning
+dotnet_naming_rule.constants_should_be_lowercase.symbols = constants
+dotnet_naming_rule.constants_should_be_lowercase.style = lowercase_style
+
+dotnet_naming_symbols.constants.applicable_kinds = field
+dotnet_naming_symbols.constants.applicable_accessibilities = *
+dotnet_naming_symbols.constants.required_modifiers = const
+
+########################
+# Naming Styles
+########################
+
+dotnet_naming_style.titlecase_style.capitalization = pascal_case
+dotnet_naming_style.lowercase_style.capitalization = camel_case
+
+########################
+# Field Initialization Warning
+########################
+
+dotnet_diagnostic.CS0649.severity = warning

@@ -5,14 +5,14 @@ using UnityEngine;
 public class Localizer : MonoBehaviour
 {
     public static Localizer Instance;
-    public TextAsset DataSheet; 
+    public TextAsset DataSheet;
 
     private Language currentLanguage;
     public Language DefaultLanguage;
 
     Dictionary<string, LanguageData> Data;
 
-    public static Action OnLanguageChange; 
+    public static Action OnLanguageChange;
 
     private void Awake()
     {
