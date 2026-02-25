@@ -18,4 +18,5 @@ MonoBehaviour:
   IsStackable: 0
   Price: 25
   PriceKey: GAMEPLAY_COST
+  LifeRestoreKey: GAMEPLAY_LIFE
   Energy: 25

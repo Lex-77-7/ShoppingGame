@@ -18,4 +18,5 @@ MonoBehaviour:
   IsStackable: 1
   Price: 60
   PriceKey: GAMEPLAY_COST
+  LifeRestoreKey: GAMEPLAY_LIFE
   Health: 75
