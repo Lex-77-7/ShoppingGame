@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class ShopTransactionHandler : MonoBehaviour
 {
-    public enum TransactionResult { Success, InsufficientFunds, InvalidItem }
-
     [Header("Inventories")]
     public Inventory PlayerInventory;
     public Inventory ShopInventory;
@@ -15,9 +13,6 @@ public class ShopTransactionHandler : MonoBehaviour
 
     [Header("Economy")]
     public Wallet PlayerWallet;
-
-    [Header("UI Feedback events")]
-    public Action<TransactionResult> OnTransactionComplete;
 
     private void OnEnable()
     {
@@ -33,37 +28,21 @@ public class ShopTransactionHandler : MonoBehaviour
 
     private void HandleBuy(ItemBase item)
     {
-        if (item == null)
-        {
-            OnTransactionComplete?.Invoke(TransactionResult.InvalidItem);
-            return;
-        }
-
-        if (!PlayerWallet.CanAfford(item.Price))
-        {
-            OnTransactionComplete?.Invoke(TransactionResult.InsufficientFunds);
-            return;
-        }
+        if ((item == null) || !PlayerWallet.CanAfford(item.Price)) return;
 
         PlayerWallet.Spend(item.Price);
+
         ShopInventory.RemoveItem(item);
         PlayerInventory.AddItem(item);
-
-        OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
 
     private void HandleSell(ItemBase item)
     {
-        if (item == null)
-        {
-            OnTransactionComplete?.Invoke(TransactionResult.InvalidItem);
-            return;
-        }
+        if (item == null) return;
 
         PlayerWallet.Earn(item.Price);
+
         PlayerInventory.RemoveItem(item);
         ShopInventory.AddItem(item);
-
-        OnTransactionComplete?.Invoke(TransactionResult.Success);
     }
 }

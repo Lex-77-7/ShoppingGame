@@ -23,7 +23,7 @@ public class LifeBarUI : MonoBehaviour
     public void UpdateLifebar(int life)
     {
         int spriteIndex = Mathf.RoundToInt(
-            ((100 - life) / 100.0f) * (HealthSprites.Count - 1)
+            (100 - life) / 100.0f * (HealthSprites.Count - 1)
         );
 
         gameObject.GetComponent<SpriteRenderer>().sprite = HealthSprites[spriteIndex];

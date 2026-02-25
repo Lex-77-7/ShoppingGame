@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c6e1335a2055b468fc85e35e311e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wallet
-  gold: 500
+  Gold: 500
 --- !u!4 &336589599
 Transform:
   m_ObjectHideFlags: 0
@@ -1366,6 +1366,7 @@ GameObject:
   - component: {fileID: 455783361}
   - component: {fileID: 455783360}
   - component: {fileID: 455783359}
+  - component: {fileID: 455783362}
   m_Layer: 5
   m_Name: LanguageButton
   m_TagString: Untagged
@@ -1436,7 +1437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455783360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 455783362}
+        m_TargetAssemblyTypeName: LanguageButton, Assembly-CSharp
+        m_MethodName: PressLanguageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &455783360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,6 +1488,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455783357}
   m_CullTransparentMesh: 1
+--- !u!114 &455783362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455783357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c5d98f0beb49d479c963402a8f179d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageButton
+  Language: 0
 --- !u!1 &487984370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,7 +2094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 346.48, y: 441.29}
+  m_AnchoredPosition: {x: 346.48, y: 428.98}
   m_SizeDelta: {x: 592.96, y: 108.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770015643
@@ -2111,7 +2137,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 74
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

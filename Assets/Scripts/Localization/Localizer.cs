@@ -6,11 +6,10 @@ public class Localizer : MonoBehaviour
 {
     public static Localizer Instance;
     public TextAsset DataSheet;
+    public Dictionary<string, LanguageData> Data;
 
-    private Language currentLanguage;
     public Language DefaultLanguage;
-
-    Dictionary<string, LanguageData> Data;
+    private Language currentLanguage;
 
     public static Action OnLanguageChange;
 
@@ -40,7 +39,7 @@ public class Localizer : MonoBehaviour
 
     void AddLanguageData(string str)
     {
-        if (Data == null) Data = new Dictionary<string, LanguageData>();
+        Data ??= new Dictionary<string, LanguageData>();
 
         string[] entries = str.Split(';');
 

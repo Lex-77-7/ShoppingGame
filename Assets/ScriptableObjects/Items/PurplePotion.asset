@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6612f80f748075f41b046d74db206eda, type: 3}
+  m_Script: {fileID: 11500000, guid: 424f4f40ea5e2fe4aa60e43d06213015, type: 3}
   m_Name: PurplePotion
-  m_EditorClassIdentifier: Assembly-CSharp::ItemFood
+  m_EditorClassIdentifier: Assembly-CSharp::ItemPotion
   NameKey: SHOP_PURPLE_POTION
   DescriptionKey: DESCRIPTION_PURPLE_POTION
   Image: {fileID: 21300000, guid: 09beaf691df5d3d4a9bbb9c1dbc9e601, type: 3}
@@ -19,4 +19,4 @@ MonoBehaviour:
   Price: 55
   PriceKey: GAMEPLAY_COST
   LifeRestoreKey: GAMEPLAY_LIFE
-  Energy: 75
+  Health: 75

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerLife : MonoBehaviour, IConsume
 {
     [SerializeField] private int maxLife = 100;
-    private int life; //Goes from 100 -> 75 -> 50 -> 25 -> 0
+    private int life; // Goes from 100 -> 75 -> 50 -> 25 -> 0
 
     public static event Action<int> OnLifeChanged;
 

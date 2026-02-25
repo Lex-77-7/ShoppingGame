@@ -20,8 +20,8 @@ public class ItemBase : ScriptableObject
         return Localizer.GetText(DescriptionKey);
     }
 
-    public string GetPriceKey()
+    public string GetPrice()
     {
-        return Localizer.GetText(PriceKey) + " " + Price;
+        return Localizer.GetText(PriceKey) + ": " + Price;
     }
 }

@@ -15,12 +15,6 @@ public class ItemSlot
         return (Item == item);
     }
 
-    internal bool CanHold(ItemBase item)
-    {
-        if (Item.IsStackable) return (Item == item);
-        return false;
-    }
-
     internal void AddOne()
     {
         Quantity++;

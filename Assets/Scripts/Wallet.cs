@@ -3,25 +3,24 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
-    [SerializeField] private int gold;
-    public int Gold => gold;
+    public int Gold;
 
     public Action OnWalletChange;
 
-    public bool CanAfford(int amount) => (gold >= amount);
+    public bool CanAfford(int amount) => (Gold >= amount);
 
     public void Spend(int amount)
     {
         if (CanAfford(amount))
         {
-            gold -= amount;
+            Gold -= amount;
             OnWalletChange?.Invoke();
         }
     }
 
     public void Earn(int amount)
     {
-        gold += amount;
+        Gold += amount;
         OnWalletChange?.Invoke();
     }
 }
