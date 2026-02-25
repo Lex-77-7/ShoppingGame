@@ -3,12 +3,13 @@ TITLE_MENU_START;Start;Començar;Empezar
 TITLE_MENU_MUSIC;Music;Musica;Música
 TITLE_MENU_LANGUAGE;Language;Lenguatge;Lenguaje
 TITLE_MENU;Shopping trip;Viatge de compras;Viaje de compras
+GAMEPLAY_STORE;LibRay Store;Botiga LibRay;Tenda LibRay
 GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
 GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Item
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
-GAMEPLAY_LIFE;Life;Vida;Vida
-GAMEPLAY_COST;Cost;Cost;Coste
+GAMEPLAY_LIFE;Life:;Vida:;Vida:
+GAMEPLAY_COST;Cost:;Cost:;Coste:
 ENDING_MENU_REPLAY;Replay;Repetir;Repetir
 ENDING_MENU_QUIT;Quit;Sortir;Salir
 ENDING_MENU_TITLE;Shopping trip ended;Compras acabades;Compras terminadas
@@ -42,12 +43,12 @@ DESCRIPTION_BANANA;Minions love them;Els Minions els estimen;Los Minions las ama
 DESCRIPTION_BAT;Home run;Home run;Home run
 DESCRIPTION_BLUE_POTION;Grants water breathing;Aconsegueix la respiració sota l'aigua;Permite respirar bajo el agua
 DESCRIPTION_BOW;A powerful bow to fight enemies;Un arc poderós per lluitar contra els enemics;Un arco poderoso para luchar contra enemigos
-DESCRIPTION_BREAD;Will help you if you're scared;T'ajudará si tens por;Te ayudará si tienes miedo
+DESCRIPTION_BREAD;Will help you if you're scared;T'ajudarà si tens por;Te ayudará si tienes miedo
 DESCRIPTION_CHEESE;Old cheese with a suspicious smell;Formatge vell amb olor sospitosa;Queso viejo con olor sospechoso
 DESCRIPTION_CHICKEN;Steve sells them with lava;El Steve els ven amb lava;Steve los vende con lava
 DESCRIPTION_CROWN;Protects you from enemies;Et protegeix dels enemics;Te protege de los enemigos
 DESCRIPTION_DAGGER;For backstabbing;Per apunyalar per l'esquena;Para clavarlo en la espalda
-DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la nit de cap d'any;Riesgo de ahogamiento en a�o nuevo
+DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la nit de cap d'any;Riesgo de ahogamiento en año nuevo
 DESCRIPTION_GREEN_POTION;Cures you with natural herbs;Et cura amb herbes naturals;Te cura con hierbas naturales
 DESCRIPTION_HAMMER;A useful tool and weapon;Una eina i arma útil;Una herramienta y arma útil
 DESCRIPTION_ORANGE_POTION;Grants fire resistance;Atorga resistència al foc;Otorga resistencia al fuego

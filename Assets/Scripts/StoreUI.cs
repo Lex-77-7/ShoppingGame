@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class StoreUI : MonoBehaviour
 {
@@ -28,7 +29,16 @@ public class StoreUI : MonoBehaviour
     {
         Title.text = SelectedItem.GetName();
         Description.text = SelectedItem.GetDescription();
-        Cost.text = SelectedItem.getPriceKey();
+        Cost.text = SelectedItem.GetPriceKey();
+
+        if (SelectedItem is Consummable consummable)
+        {
+            LifeRestore.text = consummable.GetLifeRestoreKey() + consummable.LifeRestore;
+        }
+        else
+        {
+            LifeRestore.text = "";
+        }
     }
 
     private void SetShowCaseItem(ItemBase item)
@@ -37,13 +47,5 @@ public class StoreUI : MonoBehaviour
         LocalizeItem();
 
         Image.sprite = item.Image;
-
-        if (item is Consummable consummable)
-        {
-            LifeRestore.text = "Life: +" + consummable.LifeRestore;
-        } else
-        {
-            LifeRestore.text = "";
-        }
     }
 }
