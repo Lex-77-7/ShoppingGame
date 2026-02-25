@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LifebarUI : MonoBehaviour
+public class LifeBarUI : MonoBehaviour
 {
     public List<Sprite> HealthSprites;
 

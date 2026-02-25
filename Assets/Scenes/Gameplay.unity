@@ -2139,7 +2139,6 @@ GameObject:
   - component: {fileID: 805177638}
   - component: {fileID: 805177637}
   - component: {fileID: 805177636}
-  - component: {fileID: 805177635}
   m_Layer: 5
   m_Name: ConsumeButton
   m_TagString: Untagged
@@ -2167,18 +2166,6 @@ RectTransform:
   m_AnchoredPosition: {x: -108.99999, y: 410.00003}
   m_SizeDelta: {x: 191.67, y: 191.67}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &805177635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805177633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b8c8e9e83919942a37208c65a028a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!95 &805177636
 Animator:
   serializedVersion: 7
@@ -4203,8 +4190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 482.4, y: 367.7}
-  m_SizeDelta: {x: 486.33, y: 74.78}
+  m_AnchoredPosition: {x: 536.61, y: 367.7}
+  m_SizeDelta: {x: 594.76, y: 74.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094082974
 MonoBehaviour:

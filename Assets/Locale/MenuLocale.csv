@@ -1,18 +1,18 @@
 Key;English;Català;Español
 TITLE_MENU_START;Start;Començar;Empezar
-TITLE_MENU_MUSIC;Music;Musica;Música
-TITLE_MENU_LANGUAGE;Language;Lenguatge;Lenguaje
-TITLE_MENU;Shopping trip;Viatge de compras;Viaje de compras
+TITLE_MENU_MUSIC;Music;Música;Música
+TITLE_MENU_LANGUAGE;Language;Idioma;Idioma
+TITLE_MENU;Shopping trip;Viatge de compres;Viaje de compras
 GAMEPLAY_STORE;LibRay Store;Botiga LibRay;Tienda LibRay
 GAMEPLAY_DAMAGE;Take Damage;Rebre Mal;Recibir Daño
-GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Item
+GAMEPLAY_CONSUME;Consume Item;Consum Ítem;Consume Objeto
 GAMEPLAY_BUY;Buy;Comprar;Comprar
 GAMEPLAY_SELL;Sell;Vendre;Vender
 GAMEPLAY_LIFE;Life:;Vida:;Vida:
 GAMEPLAY_COST;Cost:;Cost:;Coste:
 ENDING_MENU_REPLAY;Replay;Repetir;Repetir
 ENDING_MENU_QUIT;Quit;Sortir;Salir
-ENDING_MENU_TITLE;Shopping trip ended;Compras acabades;Compras terminadas
+ENDING_MENU_TITLE;Shopping trip ended;Compres acabades;Compras terminadas
 SHOP_APPLE;Apple;Poma;Manzana
 SHOP_AXE;Axe;Destral;Hacha
 SHOP_BANANA;Banana;Banana;Banana
@@ -48,14 +48,14 @@ DESCRIPTION_CHEESE;Old cheese with a suspicious smell;Formatge vell amb olor sos
 DESCRIPTION_CHICKEN;Steve sells them with lava;El Steve els ven amb lava;Steve los vende con lava
 DESCRIPTION_CROWN;Protects you from enemies;Et protegeix dels enemics;Te protege de los enemigos
 DESCRIPTION_DAGGER;For backstabbing;Per apunyalar per l'esquena;Para clavarlo en la espalda
-DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la nit de cap d'any;Riesgo de ahogamiento en año nuevo
+DESCRIPTION_GRAPES;Choking hazard on New Year's Eve;Risc d'ennuegament en la Nit de Cap d'Any;Riesgo de atragantamiento en año nuevo
 DESCRIPTION_GREEN_POTION;Cures you with natural herbs;Et cura amb herbes naturals;Te cura con hierbas naturales
 DESCRIPTION_HAMMER;A useful tool and weapon;Una eina i arma útil;Una herramienta y arma útil
 DESCRIPTION_ORANGE_POTION;Grants fire resistance;Atorga resistència al foc;Otorga resistencia al fuego
 DESCRIPTION_PINK_POTION;Cupid's favourite potion;La poció preferida del Cupido;La poción favorita de Cupido
 DESCRIPTION_PIZZA;Does not go with pineapple;No va amb pinya;No va con piña
 DESCRIPTION_PURPLE_POTION;Drink Agatha Harkness;Beu a l'Agatha Harkness;Bebe a Agatha Harkness
-DESCRIPTION_RED_POTION;Will cause more problems than UNO;Provocará més problemes que UNO;Causará más problemas que UNO
+DESCRIPTION_RED_POTION;Will cause more problems than UNO;Provocarà més problemes que l'UNO;Causará más problemas que el UNO
 DESCRIPTION_SHIELD;Protects you from enemies;Et protegeix dels enemics;Te protege de los enemigos
 DESCRIPTION_SWORD;A classic weapon;Una arma clàssica;La vieja confiable
 DESCRIPTION_TRIDENT;A flashy weapon;Una arma de classe;Una arma de clase
