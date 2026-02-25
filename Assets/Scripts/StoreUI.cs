@@ -10,7 +10,7 @@ public class StoreUI : MonoBehaviour
     public TextMeshProUGUI Cost;
     public TextMeshProUGUI LifeRestore;
 
-    private ItemBase SelectedItem;
+    private ItemBase selectedItem;
 
     private void OnEnable()
     {
@@ -26,11 +26,11 @@ public class StoreUI : MonoBehaviour
 
     private void LocalizeItem()
     {
-        Title.text = SelectedItem.GetName();
-        Description.text = SelectedItem.GetDescription();
-        Cost.text = SelectedItem.GetPriceKey();
+        Title.text = selectedItem.GetName();
+        Description.text = selectedItem.GetDescription();
+        Cost.text = selectedItem.GetPriceKey();
 
-        if (SelectedItem is Consummable consummable)
+        if (selectedItem is Consummable consummable)
         {
             LifeRestore.text = consummable.GetLifeRestoreKey() + consummable.LifeRestore;
         }
@@ -42,7 +42,7 @@ public class StoreUI : MonoBehaviour
 
     private void SetShowCaseItem(ItemBase item)
     {
-        SelectedItem = item;
+        selectedItem = item;
         LocalizeItem();
 
         Image.sprite = item.Image;
