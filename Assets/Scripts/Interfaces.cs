@@ -1,4 +1,4 @@
 public interface IConsume
 {
-    bool Consume(Consummable item);
+    bool Consume(Consumable item);
 }

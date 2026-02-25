@@ -1,23 +1,23 @@
-## Delivery 01 - $(Game Title)
+## Delivery 01 - ShoppingGame
 
 ![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
 
 ### Description
 
-$(Your Game Description)
+A game where the player can buy and sell items, as well as use them to gain health.
 
 ### Features
 
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - Drag and drop
+ - A Store and a player inventory
+ - Consumable items
 
 ### Controls
 
 Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+ - Mouse
+ - Enter to start the game
+ - Esc to escape the game
 
 ### Screenshots
 
@@ -25,20 +25,13 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
-
-### Links
-
- - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
- - Steam Release: $(Steam Game Page)
+ - Arnau Badenas - Programmer
+ - Alexia Martínez - Programmer
 
 ### License
 
 This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
 
-$(Additional Licenses)
+For additional licenses (art and music) see [LICENSE](Assets/LICENSES.txt).
 
-*Copyright (c) $(Year) $(Developers Names)*
+ShoppingGame © 2026 by Arnau Badenas, Alexia Martínez, Carla Pallés

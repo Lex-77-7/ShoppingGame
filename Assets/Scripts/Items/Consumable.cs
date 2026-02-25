@@ -1,4 +1,4 @@
-public abstract class Consummable : ItemBase
+public abstract class Consumable : ItemBase
 {
     public abstract int LifeRestore { get; }
 

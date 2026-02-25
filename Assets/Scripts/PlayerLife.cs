@@ -32,9 +32,9 @@ public class PlayerLife : MonoBehaviour, IConsume
         if (life <= 0) SceneManager.LoadScene("Ending");
     }
 
-    public bool Consume(Consummable item)
+    public bool Consume(Consumable item)
     {
-        if (item is Consummable consummable)
+        if (item is Consumable consummable)
         {
             if (life >= maxLife) return false;
 

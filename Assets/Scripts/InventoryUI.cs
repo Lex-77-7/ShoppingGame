@@ -96,7 +96,7 @@ public class InventoryUI : MonoBehaviour
 
         ItemBase item = selectedSlot.GetItem();
 
-        if (item is Consummable consummable)
+        if (item is Consumable consummable)
         {
             bool isConsumed = consummable.ConsumeItem(consumer);
 
