@@ -3,8 +3,8 @@ using System.Collections.Generic;
 public enum Language
 {
     English = 1,
-    Catalan,
-    Spanish
+    Català,
+    Español
 }
 
 public class LanguageData

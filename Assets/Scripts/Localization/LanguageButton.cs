@@ -16,7 +16,7 @@ public class LanguageButton : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Language += 1;
-        if (Language > Language.Spanish) Language = Language.English;
+        if (Language > Language.Español) Language = Language.English;
 
         Localizer.SetLanguage(Language);
         localizedText.text = Language.ToString();
