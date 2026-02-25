@@ -17,7 +17,7 @@ public class LifebarUI : MonoBehaviour
 
     private void OnDisable()
     {
-        PlayerLife.OnLifeChanged += UpdateLifebar;
+        PlayerLife.OnLifeChanged -= UpdateLifebar;
     }
 
     public void UpdateLifebar(int life)

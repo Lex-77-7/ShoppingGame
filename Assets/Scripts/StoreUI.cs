@@ -26,6 +26,8 @@ public class StoreUI : MonoBehaviour
 
     private void LocalizeItem()
     {
+        if (selectedItem == null) return;
+
         Title.text = selectedItem.GetName();
         Description.text = selectedItem.GetDescription();
         Cost.text = selectedItem.GetPriceKey();
@@ -43,8 +45,8 @@ public class StoreUI : MonoBehaviour
     private void SetShowCaseItem(ItemBase item)
     {
         selectedItem = item;
-        LocalizeItem();
 
-        Image.sprite = item.Image;
+        Image.sprite = selectedItem.Image;
+        LocalizeItem();
     }
 }
