@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public enum Language
 {
     English = 1,
-    Català,
+    Catala,
     Español
 }
 

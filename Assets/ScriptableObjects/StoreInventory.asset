@@ -13,6 +13,26 @@ MonoBehaviour:
   m_Name: StoreInventory
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   itemSlots:
+  - Item: {fileID: 11400000, guid: 32e6187ee3268ad499926dc74c95a5b1, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 2579711598970c24baaf2be46a408f0f, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 103f638a87c60fa4896876567caa5357, type: 2}
+    Quantity: 5
+  - Item: {fileID: 11400000, guid: a24cfceca0e7c224095a4db66baa89cb, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: ced5c0705a3ff8a42b19d63217fb6884, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: babe3efee8608714f96129f599fd77a0, type: 2}
+    Quantity: 3
+  - Item: {fileID: 11400000, guid: baba3926180dab345800db48a0d0a627, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 6811aa3be3d26854ab82501471d862bc, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 3c7a01c3c3f4eeb46a4564d2e7b6ec30, type: 2}
+    Quantity: 2
+  - Item: {fileID: 11400000, guid: f25a71c168502fd4093cc0390a85f423, type: 2}
+    Quantity: 1
   - Item: {fileID: 11400000, guid: 9fccb385d0b391349b46823009f29be5, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: e73d2beb63a336b4c88e17bb25a54622, type: 2}
@@ -26,24 +46,4 @@ MonoBehaviour:
   - Item: {fileID: 11400000, guid: 27836723c86473f4ead4ad310ebe0014, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: 16b4aa6b743783345b1656eafc9fded2, type: 2}
-    Quantity: 5
-  - Item: {fileID: 11400000, guid: 32e6187ee3268ad499926dc74c95a5b1, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: 2579711598970c24baaf2be46a408f0f, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: 103f638a87c60fa4896876567caa5357, type: 2}
-    Quantity: 3
-  - Item: {fileID: 11400000, guid: a24cfceca0e7c224095a4db66baa89cb, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: ced5c0705a3ff8a42b19d63217fb6884, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: babe3efee8608714f96129f599fd77a0, type: 2}
-    Quantity: 5
-  - Item: {fileID: 11400000, guid: baba3926180dab345800db48a0d0a627, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: 6811aa3be3d26854ab82501471d862bc, type: 2}
-    Quantity: 1
-  - Item: {fileID: 11400000, guid: 3c7a01c3c3f4eeb46a4564d2e7b6ec30, type: 2}
-    Quantity: 2
-  - Item: {fileID: 11400000, guid: f25a71c168502fd4093cc0390a85f423, type: 2}
     Quantity: 1

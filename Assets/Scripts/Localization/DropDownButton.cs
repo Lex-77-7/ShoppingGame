@@ -12,7 +12,7 @@ public class DropDownButton : MonoBehaviour
                 Language = Language.English;
                 break;
             case 1:
-                Language = Language.Català;
+                Language = Language.Catala;
                 break;
             case 2:
                 Language = Language.Español;
