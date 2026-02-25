@@ -9,7 +9,7 @@ A game where the player can buy and sell items, as well as use them to gain heal
 ### Features
 
  - Drag and drop
- - A Store and a player inventory
+ - A store and a player inventory
  - Consumable items
 
 ### Controls
@@ -27,6 +27,7 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
  - Arnau Badenas - Programmer
  - Alexia Martínez - Programmer
+ - Carla Pallés - Programmer
 
 ### License
 
