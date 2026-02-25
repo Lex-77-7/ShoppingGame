@@ -34,11 +34,11 @@ public class PlayerLife : MonoBehaviour, IConsume
 
     public bool Consume(Consumable item)
     {
-        if (item is Consumable consummable)
+        if (item is Consumable consumable)
         {
             if (life >= maxLife) return false;
 
-            life += consummable.LifeRestore;
+            life += consumable.LifeRestore;
             life = Mathf.Clamp(life, 0, maxLife);
 
             OnLifeChanged?.Invoke(life);

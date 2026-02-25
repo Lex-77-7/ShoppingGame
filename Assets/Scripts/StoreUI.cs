@@ -32,9 +32,9 @@ public class StoreUI : MonoBehaviour
         Description.text = selectedItem.GetDescription();
         Cost.text = selectedItem.GetPrice();
 
-        if (selectedItem is Consumable consummable)
+        if (selectedItem is Consumable consumable)
         {
-            LifeRestore.text = consummable.GetLifeRestore();
+            LifeRestore.text = consumable.GetLifeRestore();
         }
         else
         {
